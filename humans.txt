@@ -3,4 +3,4 @@
 /* SITE */
   Standards: HTML5, CSS3
   Components: jQuery
-  Software: TextWrangler
+  Software: atom.io
