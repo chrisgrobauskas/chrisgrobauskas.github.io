@@ -5,7 +5,7 @@
 	<title>Chris Grobauskas</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-	
+
 		body {
 		background-color: white;
 		font-family: tahoma, "Helvetica Neue", "Helvetica", helvetica, arial, sans-serif;
@@ -33,7 +33,7 @@
 		font-family: "Helvetica Neue", "Helvetica", helvetica, sans-serif;
 		font-size: 18px;
 		font-weight: 200;
-		line-height: 1em;     
+		line-height: 1em;
 		}
 
 		a:link {
@@ -52,7 +52,7 @@
 		br {
 		clear: both;
 		}
-				
+
 		#headline {
 		color: white;
 		background-color: black;
@@ -83,7 +83,7 @@
 		#main a:link {
 		color: #000000;
 		}
-		
+
 		#main a:hover, a:active {
 		background: #e3e3e3;
 		}
@@ -115,13 +115,13 @@
 		margin-top: 30px;
 		text-align: center
 		}
-		
+
 		.container, .deck{
 		margin: 0px;
 		padding: 0px;
 		position: center;
 		}
-			
+
 		.card {
 		-webkit-transform-style: preserve-3d;
 		-moz-transform-style: preserve-3d;
@@ -133,7 +133,7 @@
 		margin: 5px;
 		position: relative;
 		}
-		
+
 		.card div {
 		-webkit-transition:.5s;
 		-moz-transition:.5s;
@@ -145,7 +145,7 @@
 		height: 100%;
 		position: absolute;
 		}
-					
+
 		.front, .back {
 		border: 2px solid #d74327;
 		border-radius: 30px;
@@ -154,7 +154,7 @@
 		padding: 0px;
 		margin: 0px;
 		}
-		
+
 		.front {
 		z-index: 2;
 		-moz-transform: rotateX(0deg);
@@ -163,7 +163,7 @@
 		background: #d74327;
 		color: #ffffff;
 		}
-		
+
 		.back {
 		-moz-transform: rotateX(-180deg);
 		-webkit-transform: rotateX(-180deg);
@@ -172,7 +172,7 @@
 		color: #d74327;
 		cursor: pointer;
 		}
-		
+
 		/* NOTE: MSIE requires both sides to flip */
 		.card:hover .front {
 		-webkit-transform: rotateX(-180deg);
@@ -198,19 +198,19 @@
 		-webkit-transform: rotateX(0);
 		transform: rotateX(0deg);
 		}
-		
+
 		.front, .front h2 {
 		font-size: 36px;
 		font-weight: 300;
 		text-align: center;
 		}
-		
+
 		.back, .back p {
 		font-size: 24px;
 		font-weight: 300;
 		text-align: center;
 		}
-		
+
 		.back ul {
 		margin: 0;
 		padding: 0;
@@ -225,20 +225,20 @@
 		padding: .5em;
 		text-align: left;
 		}
-		
+
 		@media screen and (min-width: 600px) {
-		
+
 			.container {
 			max-width: 900px;
 			padding: 0px;
 			padding-top: 25px;
 			padding-left: 25px;
-			}				
-		
+			}
+
 			#headline {
 			padding: 15px 5%;
 			}
-			
+
 			.copyright {
 			padding-right: 5%;
 			text-align: right
@@ -249,24 +249,24 @@
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script>
 		$( document ).ready(function () {
-			$( ".card" ).mousedown( 
+			$( ".card" ).mousedown(
 				function () {
-					$(this).find(".front").toggleClass("front-flip");	
-			}, 
+					$(this).find(".front").toggleClass("front-flip");
+			},
 				function () {
-					$(this).find(".front").toggleClass("back-flip" );	
+					$(this).find(".front").toggleClass("back-flip" );
 			});
 		});
 	</script>
 </head>
-<body>   
+<body>
 	<div id="headline">
 		<div class="container">
 			<header>
 				<h1>Chris Grobauskas</h1>
 			</header>
 		</div>
-	</div>    
+	</div>
 	<div id="main">
 		<div class="container">
 			<div class="deck">
@@ -275,113 +275,113 @@
 					<h3>Public Service Message</h3>
 					<p>Why not treat yourself and update your browser?  This site ( and many others ) will not display properly.</p>
 					</center>
-				<![endif]--> 
-				<div class="card"> 
-					<div class="front"> 
+				<![endif]-->
+				<div class="card">
+					<div class="front">
 						<h2>About</h2>
-					</div> 
-					<div class="back"> 
+					</div>
+					<div class="back">
 						<ul><li>Father</li><li>Husband</li><li>IT Professional</li></ul>
-					</div> 
-				</div> 
+					</div>
+				</div>
 
-				<div class="card"> 
-					<div class="front"> 
+				<div class="card">
+					<div class="front">
 						<h2>School</h2>
-					</div> 
-					<div class="back"> 
+					</div>
+					<div class="back">
 						<ul><li>Indiana State University</li><li>Management Information Systems</li><li>2000</li></ul>
 					</div>
-				</div> 
-			
-				<div class="card"> 
-					<div class="front"> 
+				</div>
+
+				<div class="card">
+					<div class="front">
 						<h2>Work</h2>
-					</div> 
-					<div class="back"> 
+					</div>
+					<div class="back">
 						<ul><li>Software Developer</li><li>State Farm Insurance</li><li>2000 - Present</li></ul>
-					</div> 
-				</div> 
-	
-				<div class="card"> 
-					<div class="front"> 
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="front">
 						<h2>ChFC<sup>&reg;</sup></h2>
-					</div> 
-					<div class="back"> 
+					</div>
+					<div class="back">
 						<ul><li>Chartered Financial Consultant, ChFC<sup>&reg;</sup></li><li>The American College</li><li>2010</li></ul>
-					</div> 
-				</div> 
-		
-				<div class="card"> 
-					<div class="front"> 
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="front">
 						<h2>Leadership</h2>
-					</div> 
-					<div class="back"> 
+					</div>
+					<div class="back">
 						<ul><li>Team Lead</li><li>Technical Coordination</li><li>Project Management</li></ul>
-					</div> 
-				</div> 
-		
-				<div class="card"> 
-					<div class="front"> 
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="front">
 						<h2>Technical</h2>
-					</div> 
-			
-					<div class="back"> 
+					</div>
+
+					<div class="back">
 						<ul><li>Systems Design, Development & Support</li><li>Database & Application Performance</li></ul>
-					</div> 
-				</div> 
-			
-				<div class="card"> 
-					<div class="front"> 
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="front">
 						<h2>Platform</h2>
-					</div> 
-					<div class="back"> 
+					</div>
+					<div class="back">
 						<ul><li>Linux</li><li>Unix</li><li>z/OS</li></ul>
-					</div> 
-				</div> 
-	
-				<div class="card"> 
-					<div class="front"> 
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="front">
 						<h2>Database</h2>
-					</div> 
-					<div class="back"> 
+					</div>
+					<div class="back">
 						<ul><li>DB2 on z/OS</li><li>Postgresql on Linux</li><li>SQL - DDL, DML, DCL</li><li>SQL PL & PL/pgSQL</li></ul>
-					</div> 
-				</div> 
-		
-				<div class="card"> 
-					<div class="front"> 
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="front">
 						<h2>Web</h2>
-					</div> 
-					<div class="back"> 
+					</div>
+					<div class="back">
 						<ul><li>HTML/CSS</li><li>Javascript/jQuery</li><li>XML/XSLT</li><li>AJAX</li></ul>
-					</div> 
-				</div> 
-				<div class="card"> 
-					<div class="front"> 
+					</div>
+				</div>
+				<div class="card">
+					<div class="front">
 						<h2>Code</h2>
-					</div> 
-					<div class="back"> 
+					</div>
+					<div class="back">
 						<ul><li>Java</li><li>PHP</li><li>C</li><li>COBOL</li></ul>
-					</div> 
-				</div> 
-				<div class="card"> 
-					<div class="front"> 
+					</div>
+				</div>
+				<div class="card">
+					<div class="front">
 						<h2>Script</h2>
-					</div> 
-					<div class="back"> 
+					</div>
+					<div class="back">
 						<ul><li>Perl</li><li>Korn/Bash/POSIX</li><li>awk/sed</li><li>JCL</li></ul>
-					</div> 
-				</div> 
-		
-				<div class="card"> 
-					<div class="front"> 
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="front">
 						<h2>DevOps</h2>
-					</div> 
-					<div class="back"> 
+					</div>
+					<div class="back">
 						<ul><li>Splunk</li><li>Puppet</li><li>System & Database Administration</li></ul>
-					</div> 
-				</div> 
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -390,7 +390,7 @@
 		<h2>Contact</h2>
 			<p><a href="mailto:chris.grobauskas@outlook.com">chris.grobauskas@outlook.com</a></p>
 			<div class="copyright">
-				<p>&copy;2015. All rights reserved.</p>	
+				<p>&copy;2016. All rights reserved.</p>	
 			</div>
 	</footer>
 </body>
