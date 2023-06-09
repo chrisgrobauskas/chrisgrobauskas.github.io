@@ -90,7 +90,7 @@ Personally, I prefer scripts to exit on unexpected return codes.
 ### It's a Trap!
 One way to make a script exit on a non-zero return code is to add an error trap.
 
-> Note the ```\``` characters below are only there to keep the variables in the here document from being expanded before being written to the script file.  This is an example of using the ```\``` character in a here document to escape other characters.
+> Note the ```\``` characters below are only there to keep the variables in the here document from being expanded before being written to the script file.
 
 
 Script:
@@ -242,9 +242,9 @@ Result:
 ```
 Adding ```| tee``` above means the pipeline returns a return code of 0 instead of the 1 that is set by false.  If we want to trap these errors too we can add ```set -o pipefail```.
 
-Whether you want to trap on pipeline errros depends what you want your scripts to do.
+Whether you want to trap pipeline errors depends what you want your scripts to do.
 
-> If you turn on ```pipefail``` you might be suprised by grep when it does not match a search string.  In that case, grep sets $? equal to 1.
+> If you turn on ```pipefail``` you might be surprised by grep when it does not match a search string.  In that case, grep sets $? equal to 1.
 
 
 {% highlight bash %}
