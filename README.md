@@ -1,2 +1,2 @@
-# grobauskas.com
-Personal Site Repository
+# chrisgrobauskas.github.io
+personal site repository
