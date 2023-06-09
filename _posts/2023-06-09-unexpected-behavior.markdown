@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Unexpected Behavior"
-date:   2023-06-08 19:00:00 -0500
+date:   2023-06-09 08:00:00 -0500
 categories: general
 ---
 > “Seek simplicity and distrust it.” ~ [Alfred Whitehead](https://en.wikipedia.org/wiki/Alfred_North_Whitehead)
