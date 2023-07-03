@@ -145,7 +145,7 @@ As a part of running the ```.gitlab-ci.yml``` pipeline, Gitlab will start two jo
 
 First, the plan job will run the welder.py program which will receive command line inputs.  We will request the optional deploy job be included.  However, we will not request linting; so this optional job will not run.  Additionally, we will provide commands to run during the build and test jobs of the generated pipeline as well as the environment name for the deploy job.
 
-The Jinja Engine will combine template with the inputs when we call the ```render()``` function.  After rendering, we will write the generated pipeline output to a file.
+The Jinja Engine will combine the template with the inputs when we call the ```render()``` function.  After rendering, we will write the generated pipeline output to a file.
 
 Second, the apply job will use the trigger command to submit the generated pipeline to run independently as a child pipeline.
 
@@ -397,7 +397,7 @@ The second largest amount of code is for file I/O in ```gitlab_jinja()``` where 
 I also noted while writing the blog that I have duplicate file existence checks in ```main()``` and ```gitlab_jinja()```.  While they do need to be checked in both places in case the function is called outside the main(), the checks could be refactored into a function.
 
 #### Crazy Eights
-Only the following are 8 lines of code in ```gitlab_jinja()``` are directly related to rendering templates.
+Only the following 8 lines of code in ```gitlab_jinja()``` are directly related to rendering templates.
 
 {% highlight Python %}
     environment = Environment(
@@ -410,7 +410,7 @@ Only the following are 8 lines of code in ```gitlab_jinja()``` are directly rela
     content = template_file.render(**welder_kv)
 {% endhighlight %}
 
-- First, the ```Envrironment()``` function loads the template directory as a source and tells Jinja what we want to do with whitespace
+- First, the ```Environment()``` function loads the template directory as a source and tells Jinja what we want to do with whitespace
 - Second, the ```get_template()``` function does exactly what it sounds like it does
 - Finally, the ```render()``` function receives a key value dictionary within inputs from the command line and transforms the template into content
 
