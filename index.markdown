@@ -4,4 +4,4 @@
 
 layout: home
 ---
-> "Seek simplicity and distrust it." ~ Alfred Whitehead
+> "Each generation imagines itself to be more intelligent than the one that went before it, and wiser than the one that comes after it." ~ George Orwell
