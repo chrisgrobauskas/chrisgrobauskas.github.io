@@ -79,7 +79,7 @@ deploy-job:
 {% endhighlight %}
 
 #### Default Behavior
-In general, Jinja will simply output the inline text.  Jinja also has has a tagging syntax using ```{% raw %}{{ }}{% endraw %}``` braces.  
+In general, Jinja will simply output the inline text.  Jinja also has has a tagging syntax using ```{% raw %}{ }{% endraw %}``` braces.  
 
 Tags are how we will tell Jinja what actions to take to modify output while rendering our template.
 
@@ -394,7 +394,7 @@ As you can see from scanning the code above, most of the code in this  program i
 
 The second largest amount of code is for file I/O in ```gitlab_jinja()``` where we validate the template exists, format the path for the template directory, and later write the rendered template to stdout or a file.
 
-I also noted while writing the blog that I have duplicate file existence checks in ```main()``` and ```gitlab_jinja()```.  While they do need to be checked in both places in case the function is called outside the main(), the checks could be refactored into a function.
+I also noted while writing the blog that I have duplicate file existence checks in ```main()``` and ```gitlab_jinja()```.  While they do need to be checked in both places in case the function is called outside the main(), the checks could be refactored into a function that raises an exception that could be used in both places.
 
 #### Crazy Eights
 Only the following 8 lines of code in ```gitlab_jinja()``` are directly related to rendering templates.
@@ -412,7 +412,7 @@ Only the following 8 lines of code in ```gitlab_jinja()``` are directly related 
 
 - First, the ```Environment()``` function loads the template directory as a source and tells Jinja what we want to do with whitespace
 - Second, the ```get_template()``` function does exactly what it sounds like it does
-- Finally, the ```render()``` function receives a key value dictionary within inputs from the command line and transforms the template into content
+- Finally, the ```render()``` function receives a key value dictionary with inputs from the command line and transforms the template into content
 
 So, the code required to render a template is very small.
 
