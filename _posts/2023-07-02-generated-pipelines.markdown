@@ -2,16 +2,16 @@
 layout: post
 title:  "Generated Pipelines"
 date:   2023-07-02 20:00:00 -0500
-categories: general
+categories: coding
 ---
 > "Each generation imagines itself to be more intelligent than the one that went before it, and wiser than the one that comes after it." ~ George Orwell
 
 While this quote applies to the technology industry, I actually want to talk about code generation.
 
 ### Avoid Drudgery
-One example of code generation is this blog.  It is hosted on [Github Pages](https://pages.github.com) and uses a tool called [Jekyll](https://jekyllrb.com) to render simple markdown documents as static webpages.  
+One example of code generation is this blog.  It is hosted on [Github Pages](https://pages.github.com) and uses a tool called [Jekyll](https://jekyllrb.com) to render simple Markdown documents as static webpages.  
 
-Jekyll removes the need to write a large amount of boilerplate html and allows you to focus on writing.
+Jekyll removes the need to write a large amount of boilerplate HTML and allows you to focus on writing.
 
 This blog, though, is about generating Gitlab CI child pipelines.
 
@@ -24,7 +24,7 @@ All programming languages have code generation capabilities, but many languages 
 ### Jinja Engine
 [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) is a Python template engine that has these capabilities and more.  The full Jinja template language is quite extensive, but we will only make use of conditional includes and variables.  
 
-Hopefully by limiting ourselves it will make the concepts easier to follow.
+Hopefully, by limiting ourselves, it will make the concepts easier to follow.
 
 Specifically, our Jinja template will:
 
@@ -34,7 +34,7 @@ Specifically, our Jinja template will:
 
 You might note the ```rules``` command and variables in Gitlab CI would let you do the same things *without using a template library*.  
 
-While this is contrived example to present the concept of generating and triggering a pipeline, there are cases where being able to do this can make your code simpler.  
+While this is a contrived example to present the concept of generating and triggering a pipeline, there are cases where being able to do this can make your code simpler.  
 
 ### Jinja Template
 What does a Jinja template look like?  
@@ -79,13 +79,13 @@ deploy-job:
 {% endhighlight %}
 
 #### Default Behavior
-In general, Jinja will simply output the inline text.  Jinja also has has a tagging syntax using ```{% raw %}{ }{% endraw %}``` braces.  
+In general, Jinja will simply output the inline text.  Jinja also has a tagging syntax using ```{% raw %}{ }{% endraw %}``` braces.  
 
 Tags are how we will tell Jinja what actions to take to modify output while rendering our template.
 
 Jinja evaluates the text between the braces to allow comments, conditional execution, variable replacement, loops, etc.  We will only look at the first three.  
 
-> For a full listing of features see the [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) website!
+> For a full listing of features, see the [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) website!
 
 This section shows a comment:
 
@@ -138,12 +138,12 @@ Our companion [pipeline-welder project](https://gitlab.com/grobauskas/pipeline-w
 
 ```
 
-Feel free to use the code as you see fit.  It is licensed under the MIT license.  Just keep in mind this is a toy project and would need more work for a production setting.
+You are welcome to use the code as you see fit.  It is licensed under the MIT license.  Just keep in mind this is a toy project and would need more work for a production setting.
 
 ### Project Flowchart
 As a part of running the ```.gitlab-ci.yml``` pipeline, Gitlab will start two jobs ```plan``` and ```apply```.
 
-First, the plan job will run the welder.py program which will receive command line inputs.  We will request the optional deploy job be included.  However, we will not request linting; so this optional job will not run.  Additionally, we will provide commands to run during the build and test jobs of the generated pipeline as well as the environment name for the deploy job.
+First, the plan job will run the welder.py program, which will receive command line inputs.  We will request the optional deploy job be included.  However, we will not request linting; so this optional job will not run.  Additionally, we will provide commands to run during the build and test jobs of the generated pipeline as well as the environment name for the deploy job.
 
 The Jinja Engine will combine the template with the inputs when we call the ```render()``` function.  After rendering, we will write the generated pipeline output to a file.
 
@@ -221,12 +221,12 @@ First, the **plan job** sets up a python virtual environment and installs depend
 
 After the python program exits, the ```artifacts``` command is used to save the output from the python script as an artifact named ```./generated_job.yml```.
 
-Finally, the **apply job** uses the ```trigger``` command to submit a child pipeline with the artifact named ```./generated_job.yml```.  It uses a ```strategy: depend``` to tell the the parent pipeline to wait for the child pipeline to complete.
+Finally, the **apply job** uses the ```trigger``` command to submit a child pipeline with the artifact named ```./generated_job.yml```.  It uses a ```strategy: depend``` telling the parent pipeline to wait for the child pipeline to complete.
 
 So, while the child pipeline runs independently of the parent, the parent will wait for completion of the child before exiting.
 
 #### Plan Job
-If we peek inside the plan job in the parent pipeline, we can see what the job run looked like including the ```generated_pipeline.yml``` artifact being saved.
+If we peek inside the plan job in the parent pipeline, we can see what the job run looked like, including the ```generated_pipeline.yml``` artifact being saved.
 
 ![plan-apply](/assets/generated-pipelines/plan-apply.png){:class="img-responsive"}
 
@@ -235,11 +235,11 @@ If we peek inside the plan job in the parent pipeline, we can see what the job r
 #### Artifacts
 Artifacts are outputs from jobs that Gitlab will save and optionally pass to other commands.
 
-To view the ```generated_job.yml``` artifact, on the right hand side of the job window we can choose an option under Job Artifacts: "Download" to download a zip file of all artifacts or "Browse" to see a list of artifacts.  We will choose "Browse".
+To view the ```generated_job.yml``` artifact, on the right-hand side of the job window, we can choose an option under Job Artifacts: "Download" to download a zip file of all artifacts or "Browse" to see a list of artifacts.  We will choose "Browse".
 
 ![job-artifacts](/assets/generated-pipelines/job-artifacts.png){:class="img-responsive"}
 
-From the "Browse" screen we can click on the artifact and choose to download the ```generated_job.yml``` file to our workstation.
+From the "Browse" screen, we can click on the artifact and choose to download the ```generated_job.yml``` file to our workstation.
 
 ![browse-artifacts](/assets/generated-pipelines/browse-artifacts.png){:class="img-responsive"}
 
@@ -277,7 +277,7 @@ The ```welder.py``` program is what is calling Jinja.
 - Second, ```gitlab_jinja()``` is called to set up Jinja and call ```render()```   
 - Finally, output is written to a stdout or a file 
 
-Here is the code in its entirety.  If you prefer you can view the code in the gitlab project [here](https://gitlab.com/grobauskas/pipeline-welder).
+Here is the code in its entirety.  If you prefer, you can view the code in the gitlab project [here](https://gitlab.com/grobauskas/pipeline-welder).
 
 {% highlight Python %}
 import argparse
@@ -392,7 +392,7 @@ if __name__ == "__main__":
 ### Lines of Code
 As you can see from scanning the code above, most of the code in this  program is for handling command line options in ```main()```.
 
-The second largest amount of code is for file I/O in ```gitlab_jinja()``` where we validate the template exists, format the path for the template directory, and later write the rendered template to stdout or a file.
+The second-largest amount of code is for file I/O in ```gitlab_jinja()``` where we validate the template exists, format the path for the template directory, and later write the rendered template to stdout or a file.
 
 I also noted while writing the blog that I have duplicate file existence checks in ```main()``` and ```gitlab_jinja()```.  While they do need to be checked in both places in case the function is called outside the main(), the checks could be refactored into a function that raises an exception that could be used in both places.
 
@@ -414,11 +414,11 @@ Only the following 8 lines of code in ```gitlab_jinja()``` are directly related 
 - Second, the ```get_template()``` function does exactly what it sounds like it does
 - Finally, the ```render()``` function receives a key value dictionary with inputs from the command line and transforms the template into content
 
-So, the code required to render a template is very small.
+So, the code required to render a template is minimal.
 
 ### Future Research
-I hope I have made you more interested in Jinja and generated child pipelines in Gitlab.  When used appropriately both can simplify workflows.
+I hope I have made you more interested in Jinja and generated child pipelines in Gitlab.  When used appropriately, both can simplify workflows.
 
 We barely touched on Jinja's extensive feature set, and you also get all the other things Python can do when you're using Jinja.
 
-So, you're only limited to what you can buy, borrow, or steal (legally reuse open source code).  Happy coding!
+Happy coding!

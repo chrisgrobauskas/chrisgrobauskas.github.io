@@ -2,7 +2,7 @@
 layout: post
 title:  "Unexpected Behavior"
 date:   2023-06-09 08:00:00 -0500
-categories: general
+categories: coding
 ---
 > “Seek simplicity and distrust it.” ~ [Alfred Whitehead](https://en.wikipedia.org/wiki/Alfred_North_Whitehead)
 
@@ -24,7 +24,7 @@ Result:
 This is simple enough.  The ```false``` command sets a return code of 1.  The ```echo $?``` displays the return code for the last command.
 
 ### Script Return Codes
-If I put the same code in a bash script you get the same result.
+If I put the same code in a bash script, you get the same result.
 
 Script:
 {% highlight bash %}
@@ -42,11 +42,11 @@ Result:
 ```
 
 ### Here Documents
-The example above uses a "Here Document" (```<< SCRIPTEND``` to ```SCRIPTEND```).  Here Documents are a topic for another blog, but they allow you to label a section of inline text to be passed to other parts of a script. 
+The example above uses a "Here Document" (```<< SCRIPTEND``` to ```SCRIPTEND```).  "Here Documents" are a topic for another blog, but they allow you to label a section of inline text to be passed to other parts of a script. 
 
 In this case, the script between the labels is passed to the ```cat > notok.sh``` file redirection statement to create a script.
 
-To see what is written to the notok.sh script just ```cat``` the file created.
+To see what is written to the notok.sh script, just ```cat``` the file created.
 
 Command:
 ```
@@ -60,9 +60,9 @@ false
 ```
 
 ### Multiple Return Codes
-Now that we have a basic script to start with ... what happens if I add another command that does not set a return code of 1?  
+Now that we have a basic script to start with … what happens if I add another command that does not set a return code of 1?  
 
-In this case there is a return code of 1 (```false```) followed by a return code of 0 (```true```) in the script.
+In this case, there is a return code of 1 (```false```) followed by a return code of 0 (```true```) in the script.
 
 Script:
 {% highlight bash %}
@@ -81,7 +81,7 @@ Result:
 ```
 
 ### Last Return Code Wins
-We can tell from this two things: 1) the script is returning the return code from the ```true``` command 2) the script is *not* exiting on non-zero return codes.
+We can learn two things: 1) the script is returning the return code from the ```true``` command 2) the script is *not* exiting on non-zero return codes.
 
 While we could argue whether this is a sensible behavior, it is the expected behavior for bash. 
 
@@ -150,7 +150,7 @@ cat -n notok.sh
 
 > The function name does not have to be on_err, and it could also perform cleanup before exiting.  One example could be cleaning up files created by ```mktemp``` if that was used earlier in the script.
 
-But what happens if I put the false statement followed by a true statement inside a function?  Depending on your background you might expect it to still trap the error, but you would be wrong.
+But what happens if I put the false statement followed by a true statement inside a function?  Depending on your background, you might expect it to still trap the error, but you would be wrong.
 
 {% highlight bash %}
 cat > notok.sh << SCRIPTEND
@@ -178,7 +178,7 @@ Result:
 0
 ```
 
-Why the difference in behavior?  By default in bash a function returns the last return code, and that is the return code which would be trapped (if any).
+Why the difference in behavior?  By default, in bash a function returns the last return code, and that is the return code which would be trapped (if any).
 
 You can turn on an option, however, to tell the script to trap return codes in functions: ```set -E``` 
 
@@ -240,11 +240,11 @@ Result:
 ```
 0
 ```
-Adding ```| tee``` above means the pipeline returns a return code of 0 instead of the 1 that is set by false.  If we want to trap these errors too we can add ```set -o pipefail```.
+Adding ```| tee``` above means the pipeline returns a return code of 0 instead of the 1 that is set by false.  If we want to trap these errors too, we can add ```set -o pipefail```.
 
-Whether you want to trap pipeline errors depends what you want your scripts to do.
+Whether you want to trap pipeline errors depends on what you want your scripts to do.
 
-> If you turn on ```pipefail``` you might be surprised by grep when it does not match a search string.  In that case, grep sets $? equal to 1.
+> If you turn on ```pipefail``` you might be surprised by grep when it does not match a search string.  In that case, grep sets ```$?``` equal to 1.
 
 
 {% highlight bash %}
@@ -275,8 +275,7 @@ Error: Unexpected return code 1 on line 12
 1
 ```
 
-In conclusion, by adding the following you can set a trap to catch errors in your scripts that use functions and pipelines.  Happy coding!
-
+## In Summary
 ```
 #!/bin/bash
 set -E
@@ -289,3 +288,7 @@ on_err() {
   exit 1;
 }
 ```
+
+You can set a trap to catch errors in your scripts that use functions and pipelines by adding the above code.
+
+Happy coding!

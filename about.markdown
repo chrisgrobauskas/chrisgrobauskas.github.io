@@ -5,8 +5,10 @@ permalink: /about/
 ---
 
 # Chris Grobauskas
-After completing his Bachelor of Science Magna Cum Laude from Indiana State University, Chris joined State Farm Insurance where he is a Lead Data Engineer.
+After completing his Bachelor of Science Magna Cum Laude from Indiana State University, Chris joined State Farm where he is a Lead Data Engineer.
 
-He has professional experience in software development, performance tuning, server administration, database administration, and automation tooling.  He has worked on multiple platforms while at State Farm and is currently assigned to modernization efforts.
+He has professional experience in software development, performance tuning, server administration, database administration, and automation tooling. 
 
-Chris also holds a Chartered Financial Consultant (ChFC) designation. 
+He has worked on multiple platforms while at State Farm and is currently assigned to modernization efforts.
+
+Chris also holds a Chartered Financial Consultant (ChFC) designation.
