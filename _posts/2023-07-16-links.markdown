@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  "Worthy Links July 16"
+title:  "Links № 1"
 date:   2023-07-16 12:00:00 -0500
 categories: news
 ---
 > "The price of greatness is responsibility." ~ Winston Churchill
-
-Three worthy links to read:
 
 ## AI Risk
 Bill Gates shared a balanced view on AI risk worth reading.

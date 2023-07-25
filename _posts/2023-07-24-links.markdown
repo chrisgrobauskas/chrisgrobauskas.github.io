@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  "Worthy Links July 24"
+title:  "Links № 2"
 date:   2023-07-24 20:00:00 -0500
 categories: news
 ---
 > “The ignorance of one voter in a democracy impairs the security of all.” ~ John F. Kennedy
-
-Three worthy links to read:
 
 ## Security Through Obscurity
 Another example of why security through obscurity does not work.  Radio systems used by police and military outside the US have vulnerabilities that have existed since the 1990s.
