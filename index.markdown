@@ -4,4 +4,4 @@
 
 layout: home
 ---
-> "The price of greatness is responsibility." ~ Winston Churchill
+> “The ignorance of one voter in a democracy impairs the security of all.” ~ John F. Kennedy

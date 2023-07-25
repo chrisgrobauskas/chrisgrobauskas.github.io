@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Worthy Links"
+title:  "Worthy Links July 16"
 date:   2023-07-16 12:00:00 -0500
 categories: news
 ---
