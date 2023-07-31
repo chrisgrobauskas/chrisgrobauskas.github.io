@@ -4,4 +4,4 @@
 
 layout: home
 ---
-> “The ignorance of one voter in a democracy impairs the security of all.” ~ John F. Kennedy
+> “I can do things you cannot, you can do things I cannot; together we can do great things.” ~ Mother Teresa
