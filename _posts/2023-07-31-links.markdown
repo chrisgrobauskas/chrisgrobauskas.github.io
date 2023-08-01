@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Links № 3"
+date:   2023-07-31 20:00:00 -0500
+categories: news
+---
+
+> "The most reliable way to predict the future is to create it." ~ Abraham Lincoln
+
+## Open-Source AI, or not
+A set of researchers have evaluated AI models against a list of open-source qualities.  They found most models are not very open, including the recently released Llama2.
+
+[Llama and ChatGPT Are Not Open-Source](https://spectrum.ieee.org/open-source-llm-not-open)
+
+> [Study Results In Table](https://opening-up-chatgpt.github.io/)
+
+## AI Prompt Injection Attacks
+As usual, Bruce Schneier has hit the nail on the head in his recent post on AI prompt injection attacks.  
+
+Schneier feels it’s not “possible to fully secure LLMs against this kind of attack.”  Basically, you can use AI to generate injection prompts, but read the article to learn more.  
+
+[Automatically Finding Prompt Injection Attacks](https://www.schneier.com/blog/archives/2023/07/automatically-finding-prompt-injection-attacks.html)
+
+## Postgres and Network Impacts
+The researchers at Percona have written an article on network impacts for Postgres via remote connections.  While it's not surprising, there is network latency, the article is worth reading.
+
+[How To Measure the Network Impact on PostgreSQL Performance](https://www.percona.com/blog/how-to-measure-the-network-impact-on-postgresql-performance/)
+
+
+

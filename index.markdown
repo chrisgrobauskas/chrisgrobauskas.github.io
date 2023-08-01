@@ -4,4 +4,4 @@
 
 layout: home
 ---
-> “I can do things you cannot, you can do things I cannot; together we can do great things.” ~ Mother Teresa
+> "The most reliable way to predict the future is to create it." ~ Abraham Lincoln
