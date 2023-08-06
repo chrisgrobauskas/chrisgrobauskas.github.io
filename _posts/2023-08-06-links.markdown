@@ -15,7 +15,7 @@ Ars Technica published an excellent primer on generative AI that is jargon free.
 # Reputation Risk
 Wired recently published a piece on API vulnerabilities in the Points platform used by many hotels, airlines, and banks.  One of the researchers pointed out the vulnerabilities would have had “a cascading effect to every company utilizing their loyalty backend”.  
 
-It is an interesting thought experiment to wonder whose reputation would have been damaged more if the vulnerability was exploited and customers' information or points were stolen.  While I believe the Points API providers would be called out, the damage to the reputation of the airlines, hotels, and banks would have been greater.
+It is an interesting thought experiment to wonder whose reputation would have been damaged more if the vulnerability was exploited and customers' information or points were stolen.  While I believe the Points API provider would be called out, the damage to the reputation of the airlines, hotels, and banks would have been greater.
 
 Do you disagree that customers will blame the companies who they deal with directly when a third-party exposes their data?
 
