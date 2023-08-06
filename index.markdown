@@ -4,4 +4,4 @@
 
 layout: home
 ---
-> "The most reliable way to predict the future is to create it." ~ Abraham Lincoln
+> “It takes a lifetime to build a good reputation, but you can lose it in a minute.” ~ Will Rogers
