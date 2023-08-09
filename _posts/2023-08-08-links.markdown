@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Links № 5"
+date:   2023-08-08 20:00:00 -0500
+categories: news
+---
+> “That old law about 'an eye for an eye' leaves everybody blind. The time is always right to do the right thing.” ~ Martin Luther King, Jr.
+
+# IRS Digital Records 
+Hopefully, this transition at the IRS to digital records will go well.  I feel this effort is overdue, and I can definitely see where this would make audits easier to complete through automation.  If you don’t cheat on your taxes, you only have bad programmers to fear!
+
+[IRS vows to digitize all taxpayer documents by 2025](https://arstechnica.com/tech-policy/2023/08/irs-vows-to-digitize-all-taxpayer-documents-by-2025/)
+
+# Trading Texts
+This article on fines for major banks whose employees used “personal messaging apps to discuss deals, trades and other business” is a good reminder to know and follow the laws and regulations for your industry.
+
+Now if we can get folks to stop texting and driving too!
+
+[US regulators fine Wall Street firms $549 mln in latest texting probe](https://www.reuters.com/business/finance/us-regulators-cite-wells-fargo-bnp-paribas-over-recordkeeping-2023-08-08/)
+
+# Fake Books
+Authors are finding it hard to remove books they did not write from online sites.  In this blog post, Jane Friedman discusses the trouble she has had with Goodreads and Amazon Kindle in having work she didn't write taken down.
+
+It sounds like there is clearly an intent to deceive buyers (aka fraud) based on the blog post.
+
+- What are the obligations of a publisher to review a work before publishing?
+- Is Amazon only responsible for replying to take down notices?
+
+[I Would Rather See My Books Get Pirated Than This (Or: Why Goodreads and Amazon Are Becoming Dumpster Fires](https://janefriedman.com/i-would-rather-see-my-books-pirated/)

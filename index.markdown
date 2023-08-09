@@ -4,4 +4,4 @@
 
 layout: home
 ---
-> “It takes a lifetime to build a good reputation, but you can lose it in a minute.” ~ Will Rogers
+> “That old law about 'an eye for an eye' leaves everybody blind. The time is always right to do the right thing.” ~ Martin Luther King, Jr.
