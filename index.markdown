@@ -4,4 +4,4 @@
 
 layout: home
 ---
-> “That old law about 'an eye for an eye' leaves everybody blind. The time is always right to do the right thing.” ~ Martin Luther King, Jr.
+> "Life's tragedy is that we get old too soon and wise too late." ~ Benjamin Franklin
