@@ -4,4 +4,4 @@
 
 layout: home
 ---
-> "Life's tragedy is that we get old too soon and wise too late." ~ Benjamin Franklin
+> "I don’t have a photograph, but you can have my footprints. They’re upstairs in my socks." ~ Groucho Marx 
