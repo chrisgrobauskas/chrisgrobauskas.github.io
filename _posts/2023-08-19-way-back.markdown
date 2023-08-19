@@ -32,7 +32,7 @@ On a lark, I tried Yahoo just to see if it still worked.  While I knew that the 
 
 > For common terms, it's really cool that you can search Yahoo *in the past* with the WayBack Machine.
 
-Try the link below to check this out.  Just search for a term like baseball or something else that is common (baseball, socks, puppies)
+Try the link below to check this out.  Just search for a term that is common (baseball, socks, puppies)
 
 [Yahoo Circa 2000](https://web.archive.org/web/20000621090708/http://www.yahoo.com/)
 
