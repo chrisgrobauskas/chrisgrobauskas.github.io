@@ -4,4 +4,4 @@
 
 layout: home
 ---
-> "I don’t have a photograph, but you can have my footprints. They’re upstairs in my socks." ~ Groucho Marx 
+> "If you think technology can solve your security problems, then you don't understand the problems and you don't understand the technology." ~ Bruce Schneier

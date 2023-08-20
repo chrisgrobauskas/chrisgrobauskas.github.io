@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "Links № 7"
+date:   2023-08-20 10:00:00 -0500
+categories: news
+---
+
+> "If you think technology can solve your security problems, then you don't understand the problems and you don't understand the technology." ~ Bruce Schneier
+
+# OWASP LLM Top 10
+Infosecurity Magazine has a good summary for the new "OWASP: Top 10 for LLMs".  I also recommend reading through the full version on the OWASP site.
+
+Coupled with the recent CISA secure by default reminder and articles related to jailbreaking LLMs, it seems safe to assume current LLM Chatbots are NOT secure by default.
+
+One recommendation from the OWASP Top 10 that may prove troublesome for those wanting to fine-tune models safely:
+
+“Anything that is deemed sensitive in the fine-tuning data has the potential to be revealed to a user. Therefore, apply the rule of least privilege and do not train the model on information that the highest-privileged user can access which may be displayed to a lower-privileged user.”
+
+🌟 OWASP Top 10 for LLMs resources:
+
+[What the OWASP Top 10 for LLMs Means for the Future of AI Security](https://www.infosecurity-magazine.com/news-features/owasp-top-10-llm-means-future-ai/)
+
+[OWASP Top 10 for Large Language Model Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+
+[Software Must Be Secure by Design, and Artificial Intelligence Is No Exception](https://www.cisa.gov/news-events/news/software-must-be-secure-design-and-artificial-intelligence-no-exception)
+
+# What is a security.txt file?
+A security.txt file on your website helps security researchers report security vulnerabilities.
+
+- Full disclosure … I hadn’t run across security.txt as being “a thing” before this week.
+- A security.txt file on your site lets you provide contact information for how you want to receive reports from security researchers. 
+- Consider if you would like to provide an email or a web form.  A secure web form is probably a better choice.
+- Brian Krebs has reported that spam “security reports” go up with a security.txt file.
+
+I am not convinced everyone needs to have a security.txt file in place.  If you have only a static web page, the cost of using email and wading through spam reports would be higher than any benefits.
+
+I do think companies with bug bounty programs should have one in place to direct researchers to their bug bounty site.
+
+Site where I originally learned about security.txt files:
+> [Advocating security.txt across UK government](https://technology.blog.gov.uk/2023/08/10/advocating-security-txt-across-uk-government/)
+
+Site to help you create a security.txt file:
+> [securitytxt.org](https://securitytxt.org/)
+
+Brian Krebs’ article on security.txt files:
+> [Does Your Organization Have a Security.txt File?](https://krebsonsecurity.com/2021/09/does-your-organization-have-a-security-txt-file/)
