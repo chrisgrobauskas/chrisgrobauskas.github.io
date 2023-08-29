@@ -4,4 +4,5 @@
 
 layout: home
 ---
-> "If you think technology can solve your security problems, then you don't understand the problems and you don't understand the technology." ~ Bruce Schneier
+> "I’m not upset that you lied to me, I’m upset that from now on I can’t believe you." ~ Friedrich Nietzsche
+

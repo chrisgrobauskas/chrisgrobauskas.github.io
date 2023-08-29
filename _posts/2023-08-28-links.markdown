@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "Links № 8"
+date:   2023-08-20 20:00:00 -0500
+categories: news
+---
+
+> "I’m not upset that you lied to me, I’m upset that from now on I can’t believe you." ~ Friedrich Nietzsche
+
+# Security Defaults 
+
+🐘 Security access controls extend into your databases. 
+
+The principle of least privilege needs to be enforced not only for who can connect, but also for what they can do within your databases.
+
+For example, until Postgres version 15, PUBLIC (which all users are a member of) could create tables within the public schema unless REVOKE’d. This is just one example.
+
+It’s important to review what the security defaults are for your database product to ensure you are enforcing the least privilege access model where you explicitly grant access to resources.
+
+[PostgreSQL 15.0 Release Notes](https://www.postgresql.org/docs/release/15.0/)
+
+# In AI We Trust?
+
+Trustworthy, is that word you would apply to AI-based systems today?  
+
+Bruce Schneider and Nathan Sanders propose that AI needs to act in the interest of consumers and propose regulation will be required.
+
+🤔 What do you think? 
+
+Personally, I think this should depend on the nature of the tool.  The article reminded me of fiduciaries within the financial services arena. Some advisors are fiduciaries and have a duty to act in the best interest of their clients.  
+
+✴️ You should ask your advisor if they are fiduciary and must act in your best interests.  
+
+✴️ AI tools do not have a similar duty currently.  You should assume “you are the product and not the customer” at this point.
+
+[Can you trust AI? Here’s why you shouldn’t](https://theconversation.com/can-you-trust-ai-heres-why-you-shouldnt-209283)
+
+# OpenAI Enterprise Option
+
+If you make purchasing decisions for a regulated entity, make sure to investigate if OpenAI’s new business offering will meet your data retention and reporting requirements under the law.
+
+➕ The announcement emphasizes business data will be kept private and secure.  Good.
+
+➖ The announcement, however, mentions nothing about how long data will be retained or if this can be configured to meet data retention requirements.  Nor does it mention the ability to satisfy requests by regulators for copies or for legal discovery.
+
+🤔 Perhaps these are features that missed the press release.
+
+Still an interesting development.
+
+[Introducing ChatGPT Enterprise](https://openai.com/blog/introducing-chatgpt-enterprise)
+
