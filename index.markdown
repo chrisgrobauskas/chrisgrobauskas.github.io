@@ -4,5 +4,4 @@
 
 layout: home
 ---
-> "I’m not upset that you lied to me, I’m upset that from now on I can’t believe you." ~ Friedrich Nietzsche
-
+> "Your most unhappy customers are your greatest source of learning." ~ Bill Gates
