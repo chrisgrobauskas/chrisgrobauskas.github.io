@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Links № 10"
-date:   2023-12-02 10:00:00 -0500
+date:   2023-12-02 09:30:00 -0600
 categories: news
 ---
 > "Progress is impossible without change, and those who cannot change their minds cannot change anything." ~ George Bernard Shaw
