@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Links № 10"
+date:   2023-12-02 10:00:00 -0500
+categories: news
+---
+> "Progress is impossible without change, and those who cannot change their minds cannot change anything." ~ George Bernard Shaw
+
+# New York CyberSecurity Regulation
+If you do business within New York State, regulators have introduced changes to cybersecurity regulations for financial services companies.
+
+Both Bloomberg and The Wall Street Journal have summaries, but Bloomberg’s article links to the revised regulations.  
+
+[Bloomberg](https://news.bloomberglaw.com/privacy-and-data-security/ny-financial-regulator-rolls-out-updated-cybersecurity-standards)
+
+[Wall Street Journal](https://www.wsj.com/articles/new-york-adds-stiffer-requirements-to-cybersecurity-rules-68d49fd1)
+
+# Exabyte Storage
+⚛ One million terabytes!  Storage capacity at CERN recently exceeded one exabyte within CERN’s open-source software solution, EOS.
+
+👉 Andreas Peters, EOS project leader: “It is not just a celebration of data capacity, it is also a performance achievement, thanks to the reading rate of the combined data store crossing, for the first time, the one terabyte per second (1 TB/s) threshold.”
+
+🔦 The Blocks and Files site has a nice summary of the EOS JBOD (just a bunch of disks) software:
+[Block and Files](https://blocksandfiles.com/2023/10/05/cerns-exabyte-plus-of-data-needs-exabyte-class-eos-filesystem/)
+
+📢 Below is the CERN press release with the quote above:
+[CERN Press Release](https://home.cern/news/news/computing/exabyte-disk-storage-cern)
+
+# ACM Tech Brief on Generative AI
+The Association for Computing Machinery has published a three-page Tech Brief with an overview of potential unintended consequences of Generative AI and possible remedies.
+
+While I think the tone is a little alarmist, I agree with the concerns listed.
+
+[ACM Tech Brief: Generative Artificial Intelligence](https://dl.acm.org/doi/pdf/10.1145/3626110)

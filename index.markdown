@@ -4,4 +4,4 @@
 
 layout: home
 ---
-> "Your most unhappy customers are your greatest source of learning." ~ Bill Gates
+> "Progress is impossible without change, and those who cannot change their minds cannot change anything." ~ George Bernard Shaw
