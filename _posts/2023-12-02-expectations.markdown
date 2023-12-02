@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Team Dynamics on Vacation"
+title:  "Expectations"
 date:   2023-12-03 10:00:00 -0600
 categories: teams
 ---
 “If you give a man a fish, you feed him for a day. If you teach a man to fish, you feed him for a lifetime.” ~ Anonymous
 
+# Expectations
 Three things you should not expect your database administrator, engineer, or magician to do:
 
 1) Make “the database” work the way you *think* it works.
