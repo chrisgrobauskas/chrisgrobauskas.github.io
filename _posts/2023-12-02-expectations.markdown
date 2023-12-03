@@ -6,7 +6,7 @@ categories: database
 ---
 "If you give a man a fish, you feed him for a day. If you teach a man to fish, you feed him for a lifetime." ~ Anonymous 
 
-# Expectations
+# Reasonable Expectations
 While database engineers (and administrators) want to be helpful and answer questions, you should not expect your database engineer to:
 
 1. Make “the database” work the way you *think* it works.
@@ -16,7 +16,7 @@ While database engineers (and administrators) want to be helpful and answer ques
 # Prepare, Investigate, Report
 It is important for software engineers to have some knowledge about "the database" to be able to do their work effectively and efficiently.
 
-Software Engineers should prepare, investigate, and report issues correctly.
+Software Engineers should prepare for, investigate, and report issues correctly.
 
 📖 **Prepare**
 
