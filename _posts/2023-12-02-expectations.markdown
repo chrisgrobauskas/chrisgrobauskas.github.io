@@ -9,9 +9,9 @@ categories: database
 # Expectations
 While database engineers (and administrators) want to be helpful and answer questions, you should not expect your database engineer to:
 
-1) Make “the database” work the way you *think* it works.
-2) Teach you how to use Google to answer what a particular SQL error means.
-3) Magically make database contention go away.
+1. Make “the database” work the way you *think* it works.
+2. Teach you how to use Google to answer what a particular SQL error means.
+3. Magically make database contention go away.
 
 # Prepare, Investigate, Report
 It is important for software engineers to have some knowledge about "the database" to be able to do their work effectively and efficiently.
@@ -83,7 +83,7 @@ Why did this happen?
 ## Lock Contention
 What does the locking look like in this scenario?
 
-- API #1 will acquire a lock and does not commit
+- API #1 will acquire a lock and does not commit.
 - API #1 retains its locks and calls API #2.
 - API #2 will attempt to acquire a lock on the same data and will wait on #1 to commit.
 - API #2 will eventually hit a timeout (we hope).
