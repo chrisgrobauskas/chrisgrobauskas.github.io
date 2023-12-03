@@ -78,7 +78,7 @@ Why did this happen?
 - Both APIs will connect to the **database**.
 - Each API will get *its own* database **session**.
 - Both will get *their own* database **transaction**.
-- Locks are held in databases until a transaction **commits**.
+- Both will attempt to acquire locks held until **commit**.
 
 ## Lock Contention
 What does the locking look like in this scenario?
