@@ -75,10 +75,9 @@ Let's assume you have two methods in two different web services. These APIs (App
 
 Why did this happen?
 
-- Both APIs will connect to the **database**.
-- Each API will get *its own* database **session**.
-- Both will get *their own* database **transaction**.
-- Both will attempt to acquire locks held until **commit**.
+- Both APIs connect to the **database**.
+- Both APIs start a database **transaction**.
+- Both APIs attempt to acquire locks held until **commit**.
 
 ## Lock Contention
 What does the locking look like in this scenario?
