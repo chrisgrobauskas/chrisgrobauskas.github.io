@@ -83,7 +83,7 @@ Why did this happen?
 What does the locking look like in this scenario?
 
 - API #1 will acquire a lock and does not commit.
-- API #1 retains its locks and calls API #2.
+- API #1 retains its lock and calls API #2.
 - API #2 will attempt to acquire a lock on the same data and will wait on #1 to commit.
 - API #2 will eventually hit a timeout (we hope).
 
