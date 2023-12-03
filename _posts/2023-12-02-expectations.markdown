@@ -118,7 +118,7 @@ There are cases where triggers and routines are needed for performance, auditing
 
 To tell if your code base makes use of them, you should be able to view them in the same tool you run SQL. As long as the routines are written in a flavor of SQL/PL you should be able to view them, but some databases allow external procedures written in C, COBOL, etc. In those cases, you would want to speak with your database administrator to find out where the code for those is located.
 
-Database triggers and routines bring us full circle. These are items that you may need your database engineer's help to understand.  However, you should know if they exist and what they do to make good design choices.
+Database triggers and routines bring us full circle. These are items that you may need your database administrator's help to understand.  However, you should know if they exist and what they do to make good design choices.
 
 # Closing Thoughts
 It is not uncommon for database contention to lead to system outages. Work to avoid that in your code by seeking understanding.
