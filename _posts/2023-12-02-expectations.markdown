@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Expectations"
+title:  "Rational Expectations"
 date:   2023-12-02 21:00:00 -0600
 categories: database
 ---
 "If you give a man a fish, you feed him for a day. If you teach a man to fish, you feed him for a lifetime." ~ Anonymous 
 
-# Reasonable Expectations
+# Rational Expectations
 While database engineers (and administrators) want to be helpful and answer questions, you should not expect your database engineer to:
 
 1. Make “the database” work the way you *think* it works.
@@ -91,7 +91,7 @@ Situations like this are why poor application design is the first candidate for 
 
 While your database engineer may be able to do something to *reduce* contention in some situations, good application design is the only way to avoid contention.
 
-The scenario above might seem contrived, but it is a common scenario even experienced software engineers stumble into when frameworks hide or obfuscate what is going on in the database.
+The scenario above might seem contrived, but it is a common scenario even experienced software engineers stumble into when frameworks, database triggers, or database routines hide or obfuscate what is going on in the database.
 
 ## Frameworks
 If you are using an Object Relational Mapping (ORM) or database persistence framework, you need to understand how it manages *transactions* within the database. 
@@ -103,7 +103,24 @@ With a sub-transaction, the parent transaction can acquire locks that a child su
 
 One example of this is Spring JDBC when using REQUIRES_NEW, but the situation is not limited to Spring, or JDBC. While there can be cases where sub-transactions are appropriate, it does make reasoning about transaction boundaries more difficult. Think twice before using sub-transactions.
 
+## Database Triggers and Routines
+Another place with hidden functionality is within database triggers and routines. While called triggers and routines are normally part of the calling application's transaction, they represent "hidden code" that can modify the database. 
+
+Triggers are database objects that "fire" on certain events. For example, you can create a trigger to insert into a history table when a table is modified. Those triggers might call database routines, or may have inline routines to make changes directly to the database. Triggers are normally defined by database administrators.
+
+Database routines are functions and stored procedures that can be called to make changes within the database. They represent code external to the main application that is installed within the database and callable by one or more applications. These routines are often written by a smaller subset of developers, or may be maintained by your database administrator.
+
+Because the individuals with knowledge of how triggers and routines work are frequently not the developers writing your business logic, their functionality is typically hidden from team members not familiar with them. This can lead to issues in application design. 
+
+In our contrived locking example, it is possible that the developers were not modifying the same item in the database *directly* in their code. The change to the same database item could have been caused by a trigger updating a table common to both APIs.
+
+There are cases where triggers and routines are needed for performance, auditing, or data integrity.
+
+To tell if your code base makes use of them, you should be able to view them in the same tool you run SQL. As long as the routines are written in a flavor of SQL/PL you should be able to view them, but some databases allow external procedures written in C, COBOL, etc. In those cases, you would want to speak with your database administrator to find out where the code for those is located.
+
+Database triggers and routines bring us full circle. These are items that you may need your database engineer's help to understand.  However, you should know if they exist and what they do to make good design choices.
+
 # Closing Thoughts
-There are worse variations than the one described in this article. It is not uncommon for database contention to lead to system outages. Work to avoid that in your code by seeking understanding.
+It is not uncommon for database contention to lead to system outages. Work to avoid that in your code by seeking understanding.
 
 Try to start learning more by subscribing to a top database blog: [Feedly Top Database Blogs](https://feedly.com/i/top/database-blogs)
