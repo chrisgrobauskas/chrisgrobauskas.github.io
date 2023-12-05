@@ -6,7 +6,6 @@ categories: database
 ---
 "If you give a man a fish, you feed him for a day. If you teach a man to fish, you feed him for a lifetime." ~ Anonymous 
 
-## Rational Expectations
 While database engineers (and administrators) want to be helpful and answer questions, you should not expect your database engineer to:
 
 1. Make “the database” work the way you *think* it works.
