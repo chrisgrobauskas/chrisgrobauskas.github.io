@@ -6,14 +6,14 @@ categories: database
 ---
 "If you give a man a fish, you feed him for a day. If you teach a man to fish, you feed him for a lifetime." ~ Anonymous 
 
-# Rational Expectations
+## Rational Expectations
 While database engineers (and administrators) want to be helpful and answer questions, you should not expect your database engineer to:
 
 1. Make “the database” work the way you *think* it works.
 2. Teach you how to use Google to answer what a particular SQL error means.
 3. Magically make database contention go away.
 
-# Prepare, Investigate, Report
+## Prepare, Investigate, Report
 It is important for software engineers to have some knowledge about "the database" to be able to do their work effectively and efficiently.
 
 Software Engineers should prepare for, investigate, and report issues correctly.
@@ -53,14 +53,14 @@ If you need help, please be a good reporter and include:
 
 If you include these in your report, you will find out the last of the “5 **W**s” … **W**hy?
 
-# Database Contention
+## Database Contention
 A particularly vexing question for database engineers is database contention. 
 
 > Database contention is vexing because it is normally NOT a database issue!
 
 The most likely cause of database contention is poor application design due to a lack of understanding how the database will run a particular workload.
 
-## Units of Work
+### Units of Work
 The relevant concept is a “unit of work” within the database. A unit of work contains all the changes for a given database “transaction” during the time span from the first change (insert, update, delete, merge) to the point where you (or a framework you use) commits those changes.
 
 Actually, the term transaction is probably used by itself more these days, but I wanted to mention both as you will see both terms in blogs and journals.
@@ -79,7 +79,7 @@ Why did this happen?
 - Both APIs start a database **transaction**.
 - Both APIs attempt to acquire locks held until **commit**.
 
-## Lock Contention
+### Lock Contention
 What does the locking look like in this scenario?
 
 - API #1 will acquire a lock and does not commit.
@@ -93,7 +93,7 @@ While your database engineer may be able to do something to *reduce* contention 
 
 The scenario above might seem contrived, but it is a common scenario even experienced software engineers stumble into when frameworks, database triggers, or database routines hide or obfuscate what is going on in the database.
 
-## Frameworks
+### Frameworks
 If you are using an Object Relational Mapping (ORM) or database persistence framework, you need to understand how it manages *transactions* within the database. 
 
 - When are transactions initiated and committed?  
@@ -103,7 +103,7 @@ With a sub-transaction, the parent transaction can acquire locks that a child su
 
 One example of this is Spring JDBC when using REQUIRES_NEW, but the situation is not limited to Spring, or JDBC. While there can be cases where sub-transactions are appropriate, it does make reasoning about transaction boundaries more difficult. Think twice before using sub-transactions.
 
-## Database Triggers and Routines
+### Database Triggers and Routines
 Another place with hidden functionality is within database triggers and routines. While called triggers and routines are normally part of the calling application's transaction, they represent "hidden code" that can modify the database. 
 
 Triggers are database objects that "fire" on certain events. For example, you can create a trigger to insert into a history table when a table is modified. Those triggers might call database routines, or may have inline routines to make changes directly to the database. Triggers are normally defined by database administrators.
@@ -120,7 +120,7 @@ To tell if your code base makes use of them, you should be able to view them in 
 
 Database triggers and routines bring us full circle. These are items that you may need your database administrator's help to understand.  However, you should know if they exist and what they do to make good design choices.
 
-# Closing Thoughts
+## Closing Thoughts
 It is not uncommon for database contention to lead to system outages. Work to avoid that in your code by seeking understanding.
 
 Try to start learning more by subscribing to a top database blog: [Feedly Top Database Blogs](https://feedly.com/i/top/database-blogs)
