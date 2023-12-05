@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rational Expectations"
+title:  "Rational Expectations for Database Issues"
 date:   2023-12-02 21:00:00 -0600
 categories: database
 ---
