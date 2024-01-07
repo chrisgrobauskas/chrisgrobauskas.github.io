@@ -4,4 +4,4 @@
 
 layout: home
 ---
-> "Progress is impossible without change, and those who cannot change their minds cannot change anything." ~ George Bernard Shaw
+> “It is never too late to be what you might have been.” ~ George Elliot

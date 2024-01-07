@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "Links № 11"
+date:   2024-01-07 14:00:00 -0600
+categories: news
+---
+> “It is never too late to be what you might have been.” ~ George Elliot
+
+## Long-Distance Relationship 
+Voyager 1 and Voyager 2 were launched in 1977 and have been traveling farther from home each year.
+
+Recently, work has been undertaken to update their software to correct bugs in the attitude articulation and control system (AACS) software for both.
+
+From **PC Mag**:
+> “As Voyager 2 is over 12 billion miles away, it took over 18 hours to send the software patch to the probe …” 
+
+Read more on PC Mag’s site:
+[www.pcmag.com](https://www.pcmag.com/news/nasa-sends-software-update-over-12-billion-miles-to-voyager-2)
+
+## Care and Feeding of AI
+If you would rather not feed OpenAI or Google AI models after midnight … 
+
+Here is a good summary of how to use a robots.txt file to limit what OpenAI and Google will ingest from your website for training data.
+
+Kudos to the authors for finding a valid use of the word gauche.
+
+Read more here:
+[www.eff.org](https://www.eff.org/deeplinks/2023/12/no-robotstxt-how-ask-chatgpt-and-google-bard-not-use-your-website-training)
+
+## Old-Time Rock & Roll
+Bob Seger released the song “Old Time Rock & Roll” on his 1978 album *Stranger in Town*. Over the last year, I’ve seen a few articles about a renaissance in a mode of computing that went out of vogue around the same time, Analog Computing.
+
+From [**Wikipedia**](https://en.wikipedia.org/wiki/Analog_computer):
+> "An analog computer or analogue computer is a type of computer that uses the continuous variation aspect of physical phenomena such as electrical, mechanical, or hydraulic quantities (analog signals) to model the problem being solved."
+
+Analog computing is being looked at again due to energy efficiency. The company Mythic is even working on an Analog Matrix Processor (AMP) for use in AI applications!
+
+Learn more about these developments from the Association for Computing Machinery journal *Communications of the ACM*: [cacm.acm.org](https://cacm.acm.org/magazines/2023/11/277421-whats-old-is-new-again/fulltext)
