@@ -28,7 +28,7 @@ Read more here:
 [www.eff.org](https://www.eff.org/deeplinks/2023/12/no-robotstxt-how-ask-chatgpt-and-google-bard-not-use-your-website-training)
 
 ## Old-Time Rock & Roll
-Bob Seger released the song “Old Time Rock & Roll” on his 1978 album *Stranger in Town*. Over the last year, I’ve seen a few articles about a renaissance in a mode of computing that went out of vogue around the same time, Analog Computing.
+Bob Seger released the song “Old Time Rock & Roll” on his 1978 album *Stranger in Town*. Over the last year, I’ve seen a few articles about a renaissance in a mode of computing that went out of vogue around the same time, analog computing.
 
 From [**Wikipedia**](https://en.wikipedia.org/wiki/Analog_computer):
 > "An analog computer or analogue computer is a type of computer that uses the continuous variation aspect of physical phenomena such as electrical, mechanical, or hydraulic quantities (analog signals) to model the problem being solved."
