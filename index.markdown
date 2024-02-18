@@ -4,4 +4,4 @@
 
 layout: home
 ---
-> “It is never too late to be what you might have been.” ~ George Elliot
+> "He who knows all the answers has not been asked all the questions." ~ Confucius
