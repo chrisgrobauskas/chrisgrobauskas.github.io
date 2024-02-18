@@ -30,7 +30,7 @@ Mr. Nayrat’s article is well worth your time!
 [Postgres again elected DBMS of the Year in 2023, but I'm worried](https://blog.anayrat.info/en/2024/02/05/postgres-again-elected-dbms-of-the-year-in-2023-but-im-worried/)
 
 ## On Joining Things
-Andrew Bosworth, CTO Meta, posted an article 4 years ago that just ran across today. It speaks about joining teams, knowledge deficits, and how to quickly be productive.
+Andrew Bosworth, CTO Meta, posted an article 4 years ago that I just ran across today. It speaks about joining teams, knowledge deficits, and how to quickly be productive.
 
 As a context person, I recognize what Mr. Bosworth is driving at. It is easy to be disruptive instead of helpful if you don’t understand your new team(s).
 
