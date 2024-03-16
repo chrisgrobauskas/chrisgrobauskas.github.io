@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "Links № 13"
+date:   2024-03-16 10:00:00 -0600
+categories: news
+---
+> "Each time we face our fear, we gain strength, courage, and confidence in the doing." ~Theodore Roosevelt
+
+## Dinner Plates for AI
+Wow! The new Wafer Scale Engine 3 (WSE-3) chip is 8.5 × 8.5 inches (21.59 cm) and holds 900,000 AI cores to be used in Cerabas' CS-3 system. 
+
+Combining 64 CS-3 systems, the Condor Galaxy 3 Supercomputer cluster will be housed in Texas and be used for training AI models. According to the company, it will be capable of up to 8 exaFLOPS at FP16.
+
+### Condor Galaxy 3 Cluster Specs
+- 64 Cerebras CS-3 systems
+- 58 million AI cores 
+- 164 Terabytes of memory
+- 72,704 AMD Epyc Gen 3 Cores
+- 776 terabits-per-second node-node fabric bandwidth
+
+[livescience.com](https://www.livescience.com/technology/computing/worlds-largest-computer-chip-wse-3-will-power-massive-ai-supercomputer-8-times-faster-than-the-current-record-holder)
+
+[cerebras.net](https://www.cerebras.net/condor-galaxy)
+
+## Will Work For Hardware
+In the AI race, having the right kind of data centers is a competitive advantage instead of a cost center for a select set of companies. 
+
+The cost to operate the hardware required to train some models prices out even well-funded universities. In addition, higher salaries in industry have precipitated a brain drain from Academia. As a result, many research efforts may be privately funded or collaborative efforts between private and university researchers.
+
+The WaPo article below discusses this, along with calls for more public funding for AI research. While I am generally supportive of public funding for research, would such funding be used to rent resources from existing providers or to fund new data centers for an existing National Laboratory?
+
+[Washington Post (may require subscription)](https://www.washingtonpost.com/technology/2024/03/10/big-tech-companies-ai-research/)
+
+[Wikipedia DOE National Laboratories](https://en.wikipedia.org/wiki/United_States_Department_of_Energy_National_Laboratories)
+
+## Guess I’ll Just Eat Worms
+Researchers have tricked email assistants based on ChatGPT, Gemini, and LLaVA to send spam and exfiltrate personal data. 
+
+This by itself is interesting, but they have also used them to create a worm by propagating the instructions to a recipient. Then, if that recipient is using a similar GenAI email assistant, it will in turn continue the cycle.
+
+The researchers were able to do this with both text and image-based prompts.
+
+[Ars Technica](https://arstechnica.com/ai/2024/03/researchers-create-ai-worms-that-can-spread-from-one-system-to-another/)

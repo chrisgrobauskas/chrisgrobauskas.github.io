@@ -4,4 +4,4 @@
 
 layout: home
 ---
-> "He who knows all the answers has not been asked all the questions." ~ Confucius
+> "Each time we face our fear, we gain strength, courage, and confidence in the doing." ~Theodore Roosevelt
