@@ -31,6 +31,7 @@ This document provides essential context and guidelines for editing blog article
 title: the title
 date: 
   created: YYYY-MM-DD
+  updated: YYYY-MM-DD
 authors: 
   - grobauskas
 categories:
