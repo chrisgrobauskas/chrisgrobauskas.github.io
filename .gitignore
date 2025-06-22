@@ -135,3 +135,6 @@ dmypy.json
 # MkDocs build directory
 site/
 cython_debug/
+
+# MACOSX specific
+.DS_Store
