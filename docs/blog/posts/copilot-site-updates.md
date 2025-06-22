@@ -17,9 +17,7 @@ But GitHub Copilot, running in **agent mode**, turned the process into something
 
 > **Note:** Copilot’s agent mode allows it to take actions on your behalf like creating project files, applying custom rules, and responding like an assistant to ask for clarification on steps to take. It does much more than code completion or even suggesting blocks of code.
 
-What pleasantly surprised me was that I wasn’t dealing with code at all. 
-
-I plan to explore how this might support other documentation workflows, too.
+What pleasantly surprised me was that I wasn’t dealing with code at all, and I plan to explore how this might support other documentation workflows, too.
 
 <!-- more -->
 
