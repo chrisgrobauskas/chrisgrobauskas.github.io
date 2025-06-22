@@ -44,7 +44,7 @@ jobs:
 
     - name: Add CNAME
       run: |
-        cp ./CNAME > ./site/CNAME
+        cp ./CNAME ./site/CNAME
 
     - name: Setup Pages
       uses: actions/configure-pages@v5
