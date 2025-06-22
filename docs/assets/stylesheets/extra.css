@@ -1,0 +1,19 @@
+[data-md-color-scheme="grobauskas"] {
+    --md-primary-fg-color: #B00D23;
+    --md-primary-fg-color--light: #F2DFCE;
+    --md-primary-fg-color--dark: #90030C;
+    --md-primary-bg-color: #FFF9F5;
+    --md-primary-bg-color--light: #F2DFCE;
+    
+    --md-accent-fg-color: #F36F21;
+    --md-accent-fg-color--transparent: #F36F21;
+    --md-accent-bg-color: #F2DFCE;
+    --md-accent-bg-color--light: #FFCB00;
+    --md-accent-bg-color--dark: #F36F21;
+
+    --md-default-bg-color: #F2DFCE;
+    --md-default-bg-color--light: #FFF9F5;
+    --md-default-bg-color--dark: #B00D23;
+    --md-typeset-color: #323232;
+    --md-typeset-a-color: #B00D23;
+}
