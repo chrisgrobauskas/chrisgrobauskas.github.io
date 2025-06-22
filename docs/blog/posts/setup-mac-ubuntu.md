@@ -29,16 +29,16 @@ Of course, the first thing to do is to open a shell, and update your command lin
 
 Open your `.bashrc` file:
 
-`sh
+```sh
 vi ~/.bashrc
-`
+```
 
 Add the following at the end of the file:
 
-`sh
+```sh
 # Enable vi command line editing
 set -o vi
-`
+```
 
 > **Note:** Terminal cut-and-paste uses `Ctrl+Shift+C` and `Ctrl+Shift+V`.
 
@@ -55,16 +55,16 @@ Use a wired adapter for the initial setup and go to **Settings > Software & Upda
 
 Then open a terminal to check your hardware:
 
-`sh
+```sh
 lspci -nn -d 14e4:
-`
+```
 
 Look for Broadcom (14e4) to confirm your network adapter type. Example output:
 
-`
+```
 02:00.0 Multimedia controller [0480]: Broadcom Inc. and subsidiaries 720p FaceTime HD Camera [14e4:1570]
 03:00.0 Network controller [0280]: Broadcom Inc. and subsidiaries BCM4360 802.11ac Dual Band Wireless Network Adapter [14e4:43a0] (rev 03)
-`
+```
 
 If you see Broadcom, great!
 
@@ -73,22 +73,22 @@ These steps might not be required, but starting from a known, up-to-date state i
 
 - Update your package list:
 
-`sh
+```sh
 sudo apt update
-`
+```
 
 - Update your PCI IDs list:
 
-`sh
+```sh
 sudo update-pciids
-`
+```
 
 ### Broadcom Driver
 - Install the Broadcom drivers:
 
-`sh
+```sh
 sudo apt install --reinstall broadcom-sta-dkms
-`
+```
 
 # Suggestions for Basic Setup
 These are purely optional, and they are just suggestions. My current M3 Macbook Pro is my daily driver, and this older laptop will just be a laptop that is in our kitchen to be used mostly for web browsing.
@@ -101,15 +101,15 @@ I prefer to keep my chosen shell, editor, and email consistent across machines. 
 
 - Install zsh:
 
-`sh
+```sh
 sudo apt install zsh
-`
+```
 
 - Install Oh My Zsh:
 
-`sh
+```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-`
+```
 
 > When prompted, select zsh as your default shell.
 
@@ -119,10 +119,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 - Download the `.deb` package.
 - Open a terminal and run the following (replace `<package-name>` with the actual file name):
 
-`sh
+```sh
 cd ~/Downloads
 sudo apt install ./<package-name>.deb
-`
+```
 
 ### Add Shell Information in VS Code
 
@@ -132,7 +132,7 @@ sudo apt install ./<package-name>.deb
 
 - Add the following to your settings:
 
-`json
+```json
 {
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.profiles.linux": {
@@ -144,28 +144,28 @@ sudo apt install ./<package-name>.deb
     }
   }
 }
-`
+```
 
 ## Set VS Code as the Default Editor
 
 - In the terminal, run:
 
-`sh
+```sh
 sudo update-alternatives --set editor /usr/bin/code
-`
+```
 
 ## Add Prettier Extension to VS Code
 
 - Install the Prettier extension and add the following to your user settings:
 
-`json
+```json
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
-`
+```
 
 ## Check for Software Updates
 
@@ -178,9 +178,9 @@ I use Outlook.com and like to have email available wherever I’m logged in. Whi
 
 To install Edge, download the `.deb` package from the [Microsoft Edge website](https://www.microsoft.com/edge) and install it with:
 
-`sh
+```sh
 sudo apt install ./<package-name>.deb
-`
+```
 
 After logging in to Outlook.com in Edge, you can choose to install it as a PWA for a more app-like experience.
 
@@ -198,10 +198,10 @@ You can install the GitHub CLI following [GitHub’s official documentation](htt
 
 After installing, don’t forget to set your Git username and email:
 
-`sh
+```sh
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
-`
+```
 
 ## Final Thoughts
 
