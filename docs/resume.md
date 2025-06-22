@@ -68,7 +68,7 @@ My approach is hands-on and approachable, aiming to make technology accessible w
 - Involved in all projects from 2004 until 2012 as a design team member. Design team members functioned as architects and consultants for requirements, design, and code reviews.
 
 ###### Innovative Solutions
-- Developed and implemented a JDBC-based distributed query tool, enabling ad-hoc reports on 300 nightly-backup databases with no production impact while allowing reports for business to run during the day.
+- Developed and implemented a JDBC-based distributed query tool, enabling ad-hoc reports on 300 nightly backup databases with no production impact while allowing reports for business to run during the day.
 - Enhanced distributed command-line utilities for parallel execution and variable substitution across 300+ servers by server type, boosting operational efficiency.
 
 # Education
