@@ -2,7 +2,7 @@
 
 This document provides essential context and guidelines for editing blog articles on this site. Follow these instructions to ensure consistency, clarity, and quality in all published content.
 
-This content is also used as context and ules input to GenAI tools for editing and site maintenance.
+This content is also used as context and rules input to GenAI tools for editing and site maintenance.
 
 ## 1. Purpose
 
@@ -83,12 +83,9 @@ Use the following background when reviewing articles for appropriate tone, conte
 ## Background
 Chris Grobauskas is a senior technology engineer with 25 years of experience working across Linux, Mainframe, AWS, and a variety of other platforms. His background is in enterprise system development and modernization. 
 
-Over the years, Chris has moved from development into architecture, framework support, infrastructure, and database role.
+Over the years, Chris has moved from development into architecture, framework support, infrastructure, and database roles.
 
 This site includes his resume under `./docs/resume.md`.
-
-## Recent Experience
-More recently, he’s been focused on platform modernization, helping to re-platform the world’s largest property and casualty claim system. 
 
 ## Style
 Chris aims to keep things clear and approachable, sharing insights from his journey in tech without making things overly formal. His style is approachable, helpful, and friendly.
