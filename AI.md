@@ -2,6 +2,8 @@
 
 This document provides essential context and guidelines for editing blog articles on this site. Follow these instructions to ensure consistency, clarity, and quality in all published content.
 
+This content is also used as context and ules input to GenAI tools for editing and site maintenance.
+
 ## 1. Purpose
 
 - Maintain a high standard of technical accuracy and readability.
