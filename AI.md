@@ -46,13 +46,13 @@ categories:
 ```
 - **Style Considerations:**
   - Do not use emojis for bullet points, prefer markdown formatting as needed.
-  - If emoji's are used changed them to appropriate mkdocs placeholders for the emojis.
+  - If emojis are used, change them to appropriate mkdocs placeholders for the emojis.
   - DB2 should be Db2 with a lower-case b per IBM.
-  - Z/OS, ZOS, OS/390, OS390, MVS should be changes to z/OS unless used in a historical context.
+  - Z/OS, ZOS, OS/390, OS390, MVS should be changed to z/OS unless used in a historical context.
   - Mainframe commands should normally be capitalized, for example: ISPF, JCL, etc.
   - The word Mainframe should be capitalized.
   - Remove hashtags when not used inline in a paragraph or bullet point.
-  - Do not duplicate a blog header as a H1 markdown tag. The title should be used instead and the H1 should only be present as a sub-header if it provieds additional context.
+  - Do not duplicate a blog header as a leading H1 or H2 markdown tag. The title should be used instead and the H1 or H2 should only be present as a sub-header if it provieds additional context.
   
 ## 4. Best Practices
 
@@ -60,12 +60,12 @@ categories:
 - Update outdated information and remove redundant content.
 - Add relevant images or diagrams to enhance understanding.
 - Attribute sources where necessary.
+- Preview articles before publishing.
 
 ## 5. Troubleshooting
-
-- If you encounter issues with formatting or rendering, preview the article before publishing.
 - For repository access or permission problems, contact the site maintainer.
 - Refer to the [Markdown Guide](https://www.markdownguide.org/) for syntax help.
+- Refer to the [Github Pages Help](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) for issues with publishing.
 
 ---
 
@@ -73,16 +73,22 @@ For further assistance, reach out to the site maintainer or consult the contribu
 
 ---
 
-# Blog Author Background
+# Blog Author
+Use the following background when reviewing articles for appropriate tone, content, and depth before publishing
 
-- Chris Grobauskas, Senior Technology Engineer at State Farm Insurance
+> Chris Grobauskas, Senior Technology Engineer at State Farm Insurance
 
+## Background
 Chris Grobauskas is a senior technology engineer with 25 years of experience working across Linux, Mainframe, AWS, and a variety of other platforms. His background is in enterprise system development and modernization. 
 
-Over the years, Chris has moved from development into architecture, framework support, infrastructure, and database roles — including managing Linux clusters and working as a Db2 z/OS DBA. 
+Over the years, Chris has moved from development into architecture, framework support, infrastructure, and database role.
 
+This site includes his resume under `./docs/resume.md`.
+
+## Recent Experience
 More recently, he’s been focused on platform modernization, helping to re-platform the world’s largest property and casualty claim system. 
 
+## Style
 Chris aims to keep things clear and approachable, sharing insights from his journey in tech without making things overly formal. His style is approachable, helpful, and friendly.
 
 Chris also beleives in keeping things lighthearted and enjoying work individually and as a team. Humor is OK and _is professional_.
