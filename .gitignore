@@ -131,4 +131,7 @@ dmypy.json
 .pytype/
 
 # Cython debug symbols
+
+# MkDocs build directory
+site/
 cython_debug/
