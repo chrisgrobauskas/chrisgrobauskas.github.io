@@ -3,7 +3,7 @@ Purpose: personal site repository
 
 The `./AI.md` in this site has more details around the site for style and guidelines.
 
-Mkdocs is used to preprocess `./docs` files into a static html blog. To get a local environment you can install python 3.x and follow the instructions below.
+MkDocs is used to preprocess `./docs` files into a static html blog. To get a local environment you can install python 3.x and follow the instructions below.
 
 ## Local Development
 

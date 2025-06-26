@@ -26,7 +26,7 @@ This content is also used as context and rules input to GenAI tools for editing 
 - **Tone:** Maintain a professional and approachable tone.
 
 ## 4. Site Formatting
-- **MkDocs Blog Headers:** This is an mkdocs based blog. Use appropriate headers for all blog entries
+- **MkDocs Blog Headers:** This is an MkDocs based blog. Use appropriate headers for all blog entries
 
 ```
 ---
@@ -48,13 +48,13 @@ categories:
 ```
 - **Style Considerations:**
   - Do not use emojis for bullet points, prefer markdown formatting as needed.
-  - If emojis are used, change them to appropriate mkdocs placeholders for the emojis.
+  - If emojis are used, change them to appropriate MkDocs placeholders for the emojis.
   - DB2 should be Db2 with a lower-case b per IBM.
   - Z/OS, ZOS, OS/390, OS390, MVS should be changed to z/OS unless used in a historical context.
   - Mainframe commands should normally be capitalized, for example: ISPF, JCL, etc.
   - The word Mainframe should be capitalized.
   - Remove hashtags when not used inline in a paragraph or bullet point.
-  - Do not duplicate a blog header as a leading H1 or H2 markdown tag. The title should be used instead and the H1 or H2 should only be present as a sub-header if it provieds additional context.
+  - Do not duplicate a blog header as a leading H1 or H2 markdown tag. The title should be used instead and the H1 or H2 should only be present as a sub-header if it provides additional context.
   
 ## 4. Best Practices
 
@@ -90,6 +90,6 @@ This site includes his resume under `./docs/resume.md`.
 ## Style
 Chris aims to keep things clear and approachable, sharing insights from his journey in tech without making things overly formal. His style is approachable, helpful, and friendly.
 
-Chris also beleives in keeping things lighthearted and enjoying work individually and as a team. Humor is OK and _is professional_.
+Chris also believes in keeping things lighthearted and enjoying work individually and as a team. Humor is OK and _is professional_.
 
 
