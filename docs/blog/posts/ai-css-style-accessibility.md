@@ -15,26 +15,34 @@ categories:
 
 A few days ago, I used GitHub Copilot to help create a custom dark theme for a MkDocs Material site.
 
-While Copilot did a solid job interpreting CSS selectors, the accessibility of the resulting theme was poor. Even when I steered Copilot to color choices the contrast was often too low, leaving some text barely readable.
+Copilot did a solid job interpreting CSS selectors, but the resulting theme’s accessibility was poor. Even when I nudged it toward better color choices, contrast was often too low—some text ended up barely readable.
 
 <!-- more -->
-
 I took this on as an experiment for a few reasons:
 
 1. I’m not great at choosing color palettes.
+
 2. The MkDocs Material theme exposes a lot of selectors for customization.
+
 3. I’ve built a custom dark theme for MkDocs before and remember it being finicky.
 
-After sharing my experience on LinkedIn, I learned I wasn't alone. Others had encountered similar issues, but they found that with trial and error they could improve on their results.
+After sharing the experience on LinkedIn, I found I wasn’t alone. Others had run into similar issues but were able to improve things with trial and error.
 
-### What I found
+### My Second Attempt
+Taking that feedback to heart, I gave it another go. I generated the site with `mkdocs build` and fed the output into Copilot for context. That didn’t seem to influence results much.
 
-Taking that feedback to heart, I gave it another go. I generated the site using `mkdocs build` and fed the output into Copilot as context. This didn’t seem to influence the results much.
+So I took a more hands-on approach: I reviewed the documentation, inspected the HTML, and identified the specific selectors I wanted to style. When I asked Copilot for suggestions with more specific prompts including the selected names, the results improved.
 
-Next, I dug into the documentation and reviewed the generated HTML to identify the selectors I wanted to style. By providing Copilot specific tags for styling suggestions the results were better. I also found I could ask for help choosing colors to meet WCAG (Web Content Accessibility Guidelines) standards for contrast. 
+I also found I could ask it to pick colors that met WCAG (Web Content Accessibility Guidelines) contrast standards. 
 
-Providing these hints was more effective, but it was still far from seamless. In the end, I had to choose the colors I wanted to start with, and I could then ask for copilot to make the color darker or lighter. Or to provide a contrasting color for a given background.
+Even then, I often had to provide a base color and ask Copilot to adjust it (e.g., "make this darker" or "suggest a contrasting color for this background").
 
-The one section it was very good at was providing styling for code blocks. I was able to provide one selector, and then copilot filled out the rest when given a background. The choices were all "sane" and readable which was a pleasant surprise..
+One area where Copilot really shined was styling code blocks. I provided a single selector and a background color, and it filled in the rest with sensible, readable styles. That was a pleasant surprise.
 
-Copilot is not an "easy button" or magical; it is an assistant. While this was not a surprise, it was disappointing. So, in the end I learned that my expectation were too high.
+In the end, Copilot isn’t an “easy button” or magic; it’s an assistant. That wasn’t a surprise, but I had hoped for a bit more. Ultimately, my expectations were too high.
+
+### The Result
+If you're interested in the result, you can view the [custom stylesheet](https://github.com/chrisgrobauskas/chrisgrobauskas.github.io/blob/master/docs/assets/stylesheets/extra.css) on Github where I host my blog.
+
+
+
