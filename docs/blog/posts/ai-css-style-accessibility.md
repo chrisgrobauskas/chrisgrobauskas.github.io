@@ -15,7 +15,7 @@ categories:
 
 A few days ago, I used GitHub Copilot to help create a custom dark theme for a MkDocs Material site.
 
-Copilot did a solid job interpreting CSS selectors, but the resulting theme’s accessibility was poor. Even when I nudged it toward better color choices, contrast was often too low—some text ended up barely readable.
+Copilot did a good job interpreting CSS selectors, but the resulting theme’s accessibility was poor. Even when I nudged it toward better choices, some text ended up barely readable with low contrast to the background.
 
 <!-- more -->
 I took this on as an experiment for a few reasons:
@@ -24,16 +24,16 @@ I took this on as an experiment for a few reasons:
 
 2. The MkDocs Material theme exposes a lot of selectors for customization.
 
-3. I’ve built a custom dark theme for MkDocs before and remember it being finicky.
+3. I’ve built a custom dark theme for MkDocs before and remember it being tricky.
 
 After sharing the experience on LinkedIn, I found I wasn’t alone. Others had run into similar issues but were able to improve things with trial and error.
 
 ### My Second Attempt
-Taking that feedback to heart, I gave it another go. I generated the site with `mkdocs build` and fed the output into Copilot for context. That didn’t seem to influence results much.
+Taking that feedback to heart, I gave it another go. I generated my site with `mkdocs build` and fed the output into Copilot for context. That didn’t seem to influence results much.
 
-So I took a more hands-on approach: I reviewed the documentation, inspected the HTML, and identified the specific selectors I wanted to style. When I asked Copilot for suggestions with more specific prompts including the selected names, the results improved.
+So I took a more hands-on approach: I reviewed the documentation, inspected the HTML, and identified the specific selectors I wanted to style. When I asked Copilot for suggestions with more specific prompts including the selector names, the results improved.
 
-I also found I could ask it to pick colors that met WCAG (Web Content Accessibility Guidelines) contrast standards. 
+I also found I could ask Copilot to pick colors that met WCAG (Web Content Accessibility Guidelines) contrast standards.
 
 Even then, I often had to provide a base color and ask Copilot to adjust it (e.g., "make this darker" or "suggest a contrasting color for this background").
 
