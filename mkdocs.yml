@@ -25,9 +25,7 @@ theme:
         icon: material/lightbulb-outline
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: yellow
+      scheme: playful-dark
       toggle:
         icon: material/cog
         name: Switch to auto mode

@@ -1,19 +1,212 @@
+/* Corrected comments to match tag styling and hex color descriptions */
 [data-md-color-scheme="grobauskas"] {
-    --md-primary-fg-color: #B00D23;
-    --md-primary-fg-color--light: #F2DFCE;
-    --md-primary-fg-color--dark: #90030C;
-    --md-primary-bg-color: #FFF9F5;
-    --md-primary-bg-color--light: #F2DFCE;
-    
-    --md-accent-fg-color: #F36F21;
-    --md-accent-fg-color--transparent: #F36F21;
-    --md-accent-bg-color: #F2DFCE;
-    --md-accent-bg-color--light: #FFCB00;
-    --md-accent-bg-color--dark: #F36F21;
+    /* Primary Colors */
+    --md-primary-fg-color: #B00D23; /* Dark red */
+    --md-primary-fg-color--light: #F2DFCE; /* Light beige */
+    --md-primary-fg-color--dark: #90030C; /* Deep red */
+    --md-primary-bg-color: #FFF9F5; /* Off-white */
+    --md-primary-bg-color--light: #F2DFCE; /* Light beige */
 
-    --md-default-bg-color: #F2DFCE;
-    --md-default-bg-color--light: #FFF9F5;
-    --md-default-bg-color--dark: #B00D23;
-    --md-typeset-color: #323232;
-    --md-typeset-a-color: #B00D23;
+    /* Accent Colors */
+    --md-accent-fg-color: #F36F21; /* Bright orange */
+    --md-accent-fg-color--transparent: #F36F21; /* Bright orange */
+    --md-accent-bg-color: #F2DFCE; /* Light beige */
+    --md-accent-bg-color--light: #FFCB00; /* Bright yellow */
+    --md-accent-bg-color--dark: #F36F21; /* Bright orange */
+
+    /* Default Colors */
+    --md-default-bg-color: #F2DFCE; /* Light beige */
+    --md-default-bg-color--light: #FFF9F5; /* Off-white */
+    --md-default-bg-color--dark: #B00D23; /* Dark red */
+
+    /* Typography */
+    --md-typeset-color: #323232; /* Dark gray */
+    --md-typeset-a-color: #B00D23; /* Dark red */
+}
+
+/* Custom playful but professional dark mode adhering to WCAG standards */
+[data-md-color-scheme="playful-dark"] {
+    /* Primary Colors */
+    --md-primary-fg-color: #222233; /* Dark slate */
+    --md-primary-fg-color--light: #DAA520; /* Goldenrod */
+    --md-primary-fg-color--dark: #B8860B; /* Dark goldenrod */
+    --md-primary-bg-color: #C0C0C0; /* Silver */
+    --md-primary-bg-color--light: #D3D3D3; /* Light gray */
+    --md-primary-bg-color--dark: #FFFFFF; /* White */
+
+    /* Default Colors */
+    --md-default-bg-color: #2C2C3A; /* Light charcoal */
+    --md-default-bg-color--light: #2E2E2F; /* Slate gray */
+    --md-default-bg-color--dark: #0E0E1F; /* Very dark slate */
+
+    /* Accent Colors */
+    --md-accent-fg-color: #FFD700; /* Bright gold */
+    --md-accent-fg-color--transparent: #FFD700; /* Bright gold */
+    --md-accent-bg-color: #323232; /* Dark slate */
+    --md-accent-bg-color--light: #2E2E3F; /* Slate gray */
+    --md-accent-bg-color--dark: #FFD700; /* Bright gold */
+
+    /* Typography */
+    --md-typeset-color: #FFFFFF; /* White */
+    --md-typeset-a-color: #DAA520; /* Goldenrod */
+    --md-typeset-a-color--hover: #FFD700; /* Bright gold */
+
+    /* Headers */
+    --md-header-color: #B8860B; /* Dark goldenrod */
+    --md-container-color: #B8860B; /* Dark goldenrod */
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--md-header-color); /* Dark goldenrod */
+    }
+
+    /* Meta Items */
+    li.md-meta__item {
+        color: #DAA520; /* Goldenrod */
+    }
+
+    /* Blockquotes */
+    blockquote {
+        color: #B0B0B0; /* Light gray */
+    }
+
+    /* Code Blocks */
+    code.md-code__content, pre, [class*="language-"], code {
+        background-color: #18181b; /* Black */
+        color: #FF6347; /* Tomato red */
+    }
+    /* Syntax Highlighting - WCAG Visible on Black */
+    .highlight .kc, .highlight .n {
+        color: #7DA6FF; /* Blue-gray */
+    }
+
+    /* Keyword and String Highlighting */
+    --md-code-hl-keyword-color: #FFD700; /* Bright gold */
+    --md-code-hl-string-color: #00FF00; /* Green */
+
+    /* Comments and Functions */
+    --md-code-hl-comment-color: #B0B0B0; /* Light gray */
+    --md-code-hl-function-color: #FFA500; /* Orange */
+
+    /* Variables and Numbers */
+    --md-code-hl-variable-color: #FFFFFF; /* White */
+    --md-code-hl-number-color: #FF6347; /* Tomato red */
+
+    /* Operators and Punctuation */
+    --md-code-hl-operator-color: #FFFFFF; /* White */
+    --md-code-hl-punctuation-color: #FFFFFF; /* White */
+
+    /* Constants and Classes */
+    --md-code-hl-constant-color: #FF4500; /* OrangeRed for constants */
+    --md-code-hl-class-color: #1E90FF; /* DodgerBlue for class names */
+
+    /* Properties and Tags */
+    --md-code-hl-property-color: #8A2BE2; /* BlueViolet for properties */
+    --md-code-hl-tag-color: #FF1493; /* DeepPink for tags */
+
+    /* Attributes and Built-ins */
+    --md-code-hl-attribute-color: #32CD32; /* LimeGreen for attributes */
+    --md-code-hl-builtin-color: #FFD700; /* Bright gold for built-ins */
+
+    /* Titles and Selectors */
+    --md-code-hl-title-color: #FFFF00; /* Yellow for titles */
+    --md-code-hl-selector-color: #FF69B4; /* HotPink for selectors */
+
+    /* Doc Tags and Emphasis */
+    --md-code-hl-doctag-color: #87CEEB; /* SkyBlue for doc tags */
+    --md-code-hl-emphasis-color: #FFFFFF; /* White for emphasis */
+
+    /* Strong Text and Links */
+    --md-code-hl-strong-color: #FFFFFF; /* White for strong text */
+    --md-code-hl-link-color: #00CED1; /* DarkTurquoise for links */
+
+    /* Regex and Symbols */
+    --md-code-hl-regex-color: #FFB86C; /* LightOrange for regex */
+    --md-code-hl-symbol-color: #FFFFFF; /* White for symbols */
+
+    /* Sections and Types */
+    --md-code-hl-section-color: #FFFF00; /* Yellow for sections */
+    --md-code-hl-type-color: #00CED1; /* DarkTurquoise for types */
+
+    /* Bullets and Additions */
+    --md-code-hl-bullet-color: #FF69B4; /* HotPink for bullets */
+    --md-code-hl-addition-color: #32CD32; /* LimeGreen for additions */
+
+    /* Deletions */
+    --md-code-hl-deletion-color: #FF6347; /* TomatoRed for deletions */
+
+    /* Navigation */
+    .md-nav__item {
+        background-color: var(--md-default-bg-color); /* Dark slate */
+        color: #DAA520; /* Goldenrod */
+    }
+
+    .md-nav__item a:hover, .md-nav__item:hover > a, .md-nav__link:hover, .md-nav__item:hover a {
+        color: #FFD700; /* Bright gold */
+    }
+
+    .md-nav__title {
+        color: #B8860B; /* Dark goldenrod */
+    }
+
+    .md-ellipsis {
+        color: #DAA520; /* Goldenrod */
+    }
+
+    .md-ellipsis:hover {
+        color: #FFD700; /* Bright gold */
+    }
+
+    /* Inputs */
+    input.md-option {
+        background-color: #111111; /* Black */
+        color: #A9A9A9; /* Gray */
+    }
+
+    /* Tooltips */
+    .md-tooltip{
+        background-color: #D3D3D3; /* Light gray */
+    }
+
+    /* Search */
+    .md-search {
+        background-color: #222222; /* Charcoal */
+    }
+
+    .md-search__output {
+        background-color: #D3D3D3; /* Light gray */
+        color: #111111; /* Black */
+    }
+
+    .md-search-result__meta, .md-search-result__list, .md-search-result__item, .md-search-result__link, .md-search-result__article {
+        color: #111111; /* Black */
+    }
+
+    .md-search-result__article {
+        background-color: #B8860B; /* Dark goldenrod */
+    }
+
+    .md-search__input {
+        background: #808080; /* Gray */
+        color: #FFFFFF; /* White */
+    }
+
+    .md-search__input svg, .md-search__input .md-button__icon {
+        color: #FFFFFF; /* White */
+        fill: #FFFFFF; /* White */
+    }
+
+    /* Pagination */
+    .md-pagination__current {  
+        color: #C0C0C0; /* Silver */
+    }
+
+    .md-pagination__link:hover {
+        color: #000000; /* Black */
+    }
+
+    /* Footer */
+    .md-footer {
+        background-color: #222233; /* Dark slate */
+        color: #FFFFFF; /* White */
+    }
 }
