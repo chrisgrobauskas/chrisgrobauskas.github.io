@@ -24,8 +24,7 @@
     --md-typeset-a-color: #B00D23; /* Dark red */
 }
 
-/* Custom playful but professional dark mode adhering to WCAG standards */
-[data-md-color-scheme="playful-dark"] {
+[data-md-color-scheme="grobauskas-dark"] {
     /* Primary Colors */
     --md-primary-fg-color: #222233; /* Dark slate */
     --md-primary-fg-color--light: #DAA520; /* Goldenrod */

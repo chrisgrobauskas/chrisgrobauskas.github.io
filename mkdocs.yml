@@ -25,7 +25,7 @@ theme:
         icon: material/lightbulb-outline
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: playful-dark
+      scheme: grobauskas-dark
       toggle:
         icon: material/cog
         name: Switch to auto mode
