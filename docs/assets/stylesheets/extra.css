@@ -208,4 +208,9 @@
         background-color: #222233; /* Dark slate */
         color: #FFFFFF; /* White */
     }
+
+    /* Top Button */
+    .md-top.md-icon[data-md-component="top"] {
+        background-color: #B8860B; /* Dark goldenrod */
+    }
 }
