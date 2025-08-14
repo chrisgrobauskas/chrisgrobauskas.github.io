@@ -27,7 +27,7 @@ I didn't expect to find my paper there because I had requested my account be clo
 
 Most of the links no longer work, but the site is still running and looks like it did in 1999!  
 
-![mama.indstate.edu](/assets/mama-indstate-edu/mama-indstate-edu.gif){:class="img-responsive"}
+![mama.indstate.edu](../../assets/mama-indstate-edu/mama-indstate-edu.gif){:class="img-responsive"}
 
 
 ### Searching for Answers

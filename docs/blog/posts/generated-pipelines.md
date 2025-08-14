@@ -155,16 +155,16 @@ The Jinja Engine will combine the template with the inputs when we call the ```r
 
 Second, the apply job will use the trigger command to submit the generated pipeline to run independently as a child pipeline.
 
-![flow](/assets/generated-pipelines/drawio-parent-child.png){:class="img-responsive"}
+![flow](../../assets/generated-pipelines/drawio-parent-child.png){:class="img-responsive"}
 
 ### Gitlab Screens
 This is what you see within Gitlab for the project's ```.gitlab-ci.yml``` when it runs.
 
-![plan-apply](/assets/generated-pipelines/plan-apply.png){:class="img-responsive"}
+![plan-apply](../../assets/generated-pipelines/plan-apply.png){:class="img-responsive"}
 
 Only the plan and apply jobs are part of the parent pipeline.  The apply job itself creates the *Downstream* pipeline by issuing a ```trigger``` command.  You can click through the Downstream pipeline to see the generated, child pipeline.
 
-![plan-apply-child](/assets/generated-pipelines/plan-apply-child.png){:class="img-responsive"}
+![plan-apply-child](../../assets/generated-pipelines/plan-apply-child.png){:class="img-responsive"}
 
 ### Parent Pipeline
 What does the parent ```.gitlab-ci.yml``` code look like?
@@ -234,20 +234,20 @@ So, while the child pipeline runs independently of the parent, the parent will w
 #### Plan Job
 If we peek inside the plan job in the parent pipeline, we can see what the job run looked like, including the ```generated_pipeline.yml``` artifact being saved.
 
-![plan-apply](/assets/generated-pipelines/plan-apply.png){:class="img-responsive"}
+![plan-apply](../../assets/generated-pipelines/plan-apply.png){:class="img-responsive"}
 
-![plan-job](/assets/generated-pipelines/plan-job.png){:class="img-responsive"}
+![plan-job](../../assets/generated-pipelines/plan-job.png){:class="img-responsive"}
 
 #### Artifacts
 Artifacts are outputs from jobs that Gitlab will save and optionally pass to other commands.
 
 To view the ```generated_job.yml``` artifact, on the right-hand side of the job window, we can choose an option under Job Artifacts: "Download" to download a zip file of all artifacts or "Browse" to see a list of artifacts.  We will choose "Browse".
 
-![job-artifacts](/assets/generated-pipelines/job-artifacts.png){:class="img-responsive"}
+![job-artifacts](../../assets/generated-pipelines/job-artifacts.png){:class="img-responsive"}
 
 From the "Browse" screen, we can click on the artifact and choose to download the ```generated_job.yml``` file to our workstation.
 
-![browse-artifacts](/assets/generated-pipelines/browse-artifacts.png){:class="img-responsive"}
+![browse-artifacts](../../assets/generated-pipelines/browse-artifacts.png){:class="img-responsive"}
 
 Below are the contents of the downloaded ```generated_job.yml``` file.  We can see that variable replacement and conditional includes have been evaluated based on the inputs for ```welder.py``` above.
 

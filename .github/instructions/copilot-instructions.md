@@ -1,3 +1,6 @@
+---
+applyTo: '**'
+---
 # Context for Editing Blog Articles
 
 This document provides essential context and guidelines for editing blog articles on this site. Follow these instructions to ensure consistency, clarity, and quality in all published content.
@@ -68,6 +71,22 @@ categories:
 - For repository access or permission problems, contact the site maintainer.
 - Refer to the [Markdown Guide](https://www.markdownguide.org/) for syntax help.
 - Refer to the [Github Pages Help](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) for issues with publishing.
+- **Common Issues:**
+  - **MkDocs Build Errors:** Ensure all required dependencies are installed and the `mkdocs.yml` file is correctly configured.
+  - **CSS Not Applying:** Verify that the `extra.css` file is linked in the `mkdocs.yml` file and clear browser cache.
+
+## 6. Image Guidelines
+- Optimize images for web use to reduce file size without compromising quality.
+- Always include descriptive `alt` text for accessibility.
+- Use consistent dimensions for images where possible.
+
+## 7. Accessibility
+- Check for color contrast issues using tools like [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
+- Ensure all interactive elements are keyboard accessible.
+- Test the site with a screen reader to verify compatibility.
+
+## 8. Encouraging Feedback
+- Contributors are encouraged to provide feedback on these guidelines to ensure they remain relevant and effective.
 
 ---
 
@@ -91,5 +110,3 @@ This site includes his resume under `./docs/resume.md`.
 Chris aims to keep things clear and approachable, sharing insights from his journey in tech without making things overly formal. His style is approachable, helpful, and friendly.
 
 Chris also believes in keeping things lighthearted and enjoying work individually and as a team. Humor is OK and _is professional_.
-
-

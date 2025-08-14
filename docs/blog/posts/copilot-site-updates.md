@@ -33,9 +33,9 @@ This step was manual. I exported all my LinkedIn posts from Ulysses as a single 
 
 ---
 
-#### Creating Context with `AI.md`
+#### Creating Context with `./github/copilot-instructions.md`
 
-I started by asking Copilot to generate a rough draft of an `AI.md` file to be used to document site quality, style, and tone guidelines. I then tailored it to fit my blog, including an author bio to guide tone and context.
+I started by asking Copilot to generate a rough draft of an `./github/copilot-instructions.md` file to be used to document site quality, style, and tone guidelines. I then tailored it to fit my blog, including an author bio to guide tone and context.
 
 The following is a summary:
 
@@ -55,19 +55,19 @@ This input gave Copilot a reliable reference point for consistent output and ton
 
 #### Editing the Blog Entries
 
-I asked Copilot to convert the `linkedin.md` content into properly formatted blog posts, using the rules in `AI.md` as a guide. I referenced the rules directly with a file hash (e.g., `#AI.md`) to make sure it obeyed the rules.
+I asked Copilot to convert the `linkedin.md` content into properly formatted blog posts, using the rules in `./github/copilot-instructions.md` as a guide. I referenced the rules directly with a file hash (e.g., `#./github/copilot-instructions.md`) to make sure it obeyed the rules.
 
-> Note: It will show up as `#file:AI.md` in the prompt window as Copilot adds the file: prefix on its own.
+> Note: It will show up as `#file:./github/copilot-instructions.md` in the prompt window as Copilot adds the file: prefix on its own.
 
 **The process was iterative**: 
 
-When I noticed emojis used as list bullets, I updated the rules in `AI.md` and reran the edits. I followed the same pattern for other style issues: refine the rules, then ask Copilot to reprocess the file.
+When I noticed emojis used as list bullets, I updated the rules in `./github/copilot-instructions.md` and reran the edits. I followed the same pattern for other style issues: refine the rules, then ask Copilot to reprocess the file.
 
 ---
 
 #### Creating and Organizing Missing Posts
 
-Once the formatting was consistent, I asked Copilot to analyze the `#posts` and compare existing blog entries against the newly converted content. For any posts missing from the `#posts` directory, I instructed it to create new markdown files, named and formatted according to the latest `AI.md` rules.
+Once the formatting was consistent, I asked Copilot to analyze the `#posts` and compare existing blog entries against the newly converted content. For any posts missing from the `#posts` directory, I instructed it to create new markdown files, named and formatted according to the latest `./github/copilot-instructions.md` rules.
 
 This step was surprisingly smooth and saved me a significant amount of time.
 
@@ -83,7 +83,7 @@ Using agent mode in this context turned what could have been a tedious migration
 
 ### Want to See the Rules?
 
-You can view the actual [`AI.md`](https://github.com/chrisgrobauskas/chrisgrobauskas.github.io/blob/master/AI.md) file I used to guide Copilot.
+You can view the actual [`./github/copilot-instructions.md`](https://github.com/chrisgrobauskas/chrisgrobauskas.github.io/blob/master/./github/copilot-instructions.md) file I used to guide Copilot.
 
 ---
 
@@ -92,8 +92,8 @@ You can view the actual [`AI.md`](https://github.com/chrisgrobauskas/chrisgrobau
 Here are the rough prompts I gave Copilot throughout the process:
 
 - Reformat the posts in `#linkedin.md` as a set of posts based on the date headers.
-- Correct any formatting that does not match the `#AI.md` rules.
-- Review the `#linkedin.md` file and make the language and tone consistent with the `#posts` entries already present. Apply `#AI.md` rules as well.
+- Correct any formatting that does not match the `#./github/copilot-instructions.md` rules.
+- Review the `#linkedin.md` file and make the language and tone consistent with the `#posts` entries already present. Apply `#./github/copilot-instructions.md` rules as well.
 - For the list of posts in `#linkedin.md` take them and if they are not a duplicate to a `#posts` entry then create a new appropriately named markdown file for each blog post created.
 
 > I cleaned these up slightly for grammar, but Copilot isn't concerned with perfect punctuation or capitalization. What matters most is that you express what you want.

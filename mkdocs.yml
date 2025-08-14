@@ -69,6 +69,15 @@ theme:
 plugins:
   - search
   - blog
+  - rss:
+      use_git: false
+      # Only include pages whose path matches blog posts; exclude generated category/archive pages
+      match_path: '^blog/*.md$'
+      rss_feed_enabled: true
+      feeds_filenames:
+        rss_created: rss.xml
+      # Use the site title as the feed description (different from site_description)
+      feed_description: "Blog of Chris Grobauskas"
 
 # Additional configuration
 extra:
@@ -80,6 +89,8 @@ extra:
       link: https://github.com/chrisgrobauskas
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/chris-grobauskas/
+    - icon: fontawesome/solid/rss
+      link: https://www.grobauskas.com/rss.xml
 
 # Extensions
 markdown_extensions:
