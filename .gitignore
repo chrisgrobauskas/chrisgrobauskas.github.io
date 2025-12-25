@@ -138,3 +138,43 @@ site/
 
 # MACOSX specific
 .DS_Store
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+
+# Angular
+/dist/
+/tmp/
+/out-tsc/
+/bazel-out/
+*.js.map
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# AWS
+.aws-sam/
+zappa_settings.json
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+postgres_data/
+
+# Environment files
+.env.local
+.env.*.local

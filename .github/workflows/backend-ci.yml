@@ -1,0 +1,62 @@
+name: Backend CI
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'awesome-notes/backend/**'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - 'awesome-notes/backend/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    services:
+      postgres:
+        image: postgres:15-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: awesome_notes_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      working-directory: ./awesome-notes/backend
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Lint with flake8
+      working-directory: ./awesome-notes/backend
+      run: |
+        flake8 app tests
+    
+    - name: Format check with black
+      working-directory: ./awesome-notes/backend
+      run: |
+        black --check app tests
+    
+    - name: Run tests
+      working-directory: ./awesome-notes/backend
+      env:
+        DATABASE_URL: postgresql://postgres:postgres@localhost:5432/awesome_notes_test
+        FLASK_ENV: testing
+      run: |
+        pytest --cov=app tests/

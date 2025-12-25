@@ -1,0 +1,16 @@
+{
+    "production": {
+        "app_function": "run.app",
+        "aws_region": "us-east-1",
+        "runtime": "python3.9",
+        "s3_bucket": "your-zappa-deployments-bucket",
+        "environment_variables": {
+            "FLASK_ENV": "production"
+        },
+        "exclude": [
+            "tests",
+            "*.pyc",
+            "__pycache__"
+        ]
+    }
+}

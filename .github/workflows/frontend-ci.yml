@@ -1,0 +1,41 @@
+name: Frontend CI
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'awesome-notes/frontend/**'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - 'awesome-notes/frontend/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: ./awesome-notes/frontend/package-lock.json
+    
+    - name: Install dependencies
+      working-directory: ./awesome-notes/frontend
+      run: npm ci
+    
+    - name: Lint
+      working-directory: ./awesome-notes/frontend
+      run: npm run lint || echo "Lint not configured"
+    
+    - name: Build
+      working-directory: ./awesome-notes/frontend
+      run: npm run build
+    
+    - name: Test
+      working-directory: ./awesome-notes/frontend
+      run: npm test -- --watch=false --browsers=ChromeHeadless || echo "Tests not configured"

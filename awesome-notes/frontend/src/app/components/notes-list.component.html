@@ -1,0 +1,93 @@
+<div class="notes-container">
+  <header class="app-header">
+    <h1>Awesome Notes</h1>
+    <button (click)="logout()" class="btn btn-secondary">Logout</button>
+  </header>
+
+  <div class="notes-layout">
+    <aside class="notes-sidebar">
+      <div class="search-box">
+        <input
+          type="text"
+          placeholder="Search notes..."
+          [(ngModel)]="searchQuery"
+          (keyup.enter)="searchNotes()"
+          class="form-control"
+        />
+        <button (click)="searchNotes()" class="btn btn-search">Search</button>
+      </div>
+
+      <button (click)="createNewNote()" class="btn btn-primary btn-block">
+        New Note
+      </button>
+
+      <div class="notes-list">
+        <div
+          *ngFor="let note of notes"
+          (click)="selectNote(note)"
+          [class.active]="selectedNote?.id === note.id"
+          class="note-item"
+        >
+          <h3>{{ note.title }}</h3>
+          <p class="note-date">{{ note.updated_at | date:'short' }}</p>
+        </div>
+        
+        <div *ngIf="notes.length === 0" class="empty-state">
+          No notes found. Create your first note!
+        </div>
+      </div>
+    </aside>
+
+    <main class="notes-content">
+      <div *ngIf="!selectedNote && !showEditor" class="empty-content">
+        <p>Select a note or create a new one</p>
+      </div>
+
+      <div *ngIf="selectedNote && !showEditor" class="note-view">
+        <div class="note-header">
+          <h2>{{ selectedNote.title }}</h2>
+          <div class="note-actions">
+            <button (click)="editNote()" class="btn btn-primary">Edit</button>
+            <button (click)="deleteNote()" class="btn btn-danger">Delete</button>
+          </div>
+        </div>
+        <div class="note-meta">
+          <span>Created: {{ selectedNote.created_at | date:'medium' }}</span>
+          <span>Updated: {{ selectedNote.updated_at | date:'medium' }}</span>
+        </div>
+        <div class="note-content" [innerHTML]="renderMarkdown(selectedNote.content)"></div>
+      </div>
+
+      <div *ngIf="showEditor" class="note-editor">
+        <div class="editor-header">
+          <input
+            type="text"
+            placeholder="Note title"
+            [(ngModel)]="editForm.title"
+            class="form-control title-input"
+          />
+          <div class="editor-actions">
+            <button (click)="saveNote()" class="btn btn-success">Save</button>
+            <button (click)="cancelEdit()" class="btn btn-secondary">Cancel</button>
+          </div>
+        </div>
+
+        <div class="editor-layout">
+          <div class="editor-pane">
+            <h4>Markdown Editor</h4>
+            <textarea
+              [(ngModel)]="editForm.content"
+              placeholder="Write your note in markdown..."
+              class="markdown-editor"
+            ></textarea>
+          </div>
+          
+          <div class="preview-pane">
+            <h4>Preview</h4>
+            <div class="markdown-preview" [innerHTML]="renderMarkdown(editForm.content)"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
