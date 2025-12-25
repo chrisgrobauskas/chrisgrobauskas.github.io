@@ -66,10 +66,22 @@ if [ "$choice" = "1" ]; then
     echo "Waiting for services to be ready..."
     sleep 10
     
-    # Initialize database
+    # Initialize database with retry logic
     echo ""
     echo "Initializing database with sample data..."
-    $DOCKER_COMPOSE exec backend python init_db.py
+    MAX_RETRIES=5
+    RETRY_COUNT=0
+    until $DOCKER_COMPOSE exec backend python init_db.py || [ $RETRY_COUNT -eq $MAX_RETRIES ]; do
+        RETRY_COUNT=$((RETRY_COUNT+1))
+        echo "Database initialization attempt $RETRY_COUNT failed. Retrying in 5 seconds..."
+        sleep 5
+    done
+    
+    if [ $RETRY_COUNT -eq $MAX_RETRIES ]; then
+        echo "⚠️  Database initialization failed after $MAX_RETRIES attempts."
+        echo "    You can manually initialize it later with:"
+        echo "    $DOCKER_COMPOSE exec backend python init_db.py"
+    fi
     
     echo ""
     echo "✅ Setup complete!"

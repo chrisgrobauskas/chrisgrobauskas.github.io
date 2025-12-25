@@ -1,5 +1,6 @@
 from flask import Blueprint, request, jsonify
 from flask_login import login_required, current_user
+from sqlalchemy import or_
 from app import db
 from app.models import Note
 from datetime import datetime
@@ -126,7 +127,7 @@ def search_notes():
     
     # Search by title or content
     if query:
-        search_filter = db.or_(
+        search_filter = or_(
             Note.title.ilike(f'%{query}%'),
             Note.content.ilike(f'%{query}%')
         )
