@@ -19,6 +19,7 @@ Actionable instructions for Staff+ communication. Influence decision-makers. Sha
 - First person ("I", "my") for experience. Second person ("you") for advice.
 
 **Voice examples:**
+
 - "Beware the 'cake in the break area' trap."
 - "Database contention is vexing because it is normally NOT a database issue!"
 - "Legacy engineers keep the present running while the future is still being built."
@@ -172,5 +173,7 @@ Before publishing:
 - [ ] Named concept where applicable
 - [ ] Scannable: short paragraphs, headers, blockquote takeaways
 - [ ] Make writing generic; no company internal references that should not be shared
+- [ ] Keep a links section at the bottom H2 level with all links in the blog entry
+- [ ] Never, ever change source quotes from another person than me. All quotes must be 100% accurate.
 
 ---

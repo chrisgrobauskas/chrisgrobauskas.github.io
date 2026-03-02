@@ -8,6 +8,7 @@ docs/tags.md
 
 # macOS
 .DS_Store
+.Ulysses*
 
 # Python artifacts
 __pycache__/
