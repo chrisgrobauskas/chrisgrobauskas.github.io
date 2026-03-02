@@ -34,7 +34,7 @@ I also worked with earlier, homegrown tools that generated scripts and JCLs. The
 
 > One homegrown tool contained an entire miniature language packed into one file, with difficult-to-read syntax.
 
-It wasn’t "bad" in the sense of being useless. It solved real problems. But it was also hard to read, hard to learn, and hard to make safe. We didn’t have editor support (highlighting, linting, validation, debugging) that would have made a custom language less risky. And it was slow, because edit macros are slow when you point them at large files.
+It wasn't "bad" in the sense of being useless. It solved real problems. But it was also hard to read, hard to learn, and hard to make safe. We didn't have editor support (highlighting, linting, validation, debugging) that would have made a custom language less risky. And it was slow, because edit macros are slow when you point them at large files.
 
 It got worse when it was used to generate _JCL templates_. Code generating other code that generates more code is where reasoning starts to get tricky. It isn't that it can't work; it's that it becomes hard to be confident the output is correct. Changing it was even worse, because it also generated configuration files for itself.
 

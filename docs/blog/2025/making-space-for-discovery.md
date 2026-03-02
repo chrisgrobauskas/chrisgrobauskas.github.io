@@ -8,6 +8,7 @@ tags:
   - Leadership
   - Research
 ---
+
 # Making Space for Discovery
 
 As children, we built forts out of pillows and cardboard boxes ... no approvals, no fear of failure, just imagination and play. Now, as adults, we optimize for uptime and reliability. Production must be stable.
@@ -34,9 +35,9 @@ To make your research spikes count, aim beyond the obvious:
 - **Validate assumptions.** Use early research to pressure-test architectural decisions that may no longer serve your evolving system.
 - **Trace bottlenecks.** Minor slowdowns can signal deeper structural flaws. Don't stop at the symptom; follow the signal to the source.
 
-Consider how this plays out in a real-world scenario like platform migration. While a spike on session limits might confirm server needs, it can also reveal scaling constraints, challenge outdated assumptions, and reshape service boundaries. 
+Consider how this plays out in a real-world scenario like platform migration. While a spike on session limits might confirm server needs, it can also reveal scaling constraints, challenge outdated assumptions, and reshape service boundaries.
 
-On a platform migration I worked on with colleagues, a spike confirmed that we could push beyond a default limit for write transactions — but also that the new platform would not match the throughput of the legacy system it was replacing. That was expected, but confirming it early allowed design conversations to start sooner rather than later.
+On a platform migration I worked on with colleagues, a spike confirmed that we could push beyond a default limit for write transactions but also that the new platform would not match the throughput of the legacy system it was replacing. That was expected, but confirming it early allowed design conversations to start sooner rather than later.
 
 That's systems thinking: understanding how local choices ripple through your entire architecture and using that insight to build smarter.
 
