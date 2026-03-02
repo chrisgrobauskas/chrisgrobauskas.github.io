@@ -3,9 +3,11 @@ title: "Willing to Fail"
 description: "The real risk isn't moving too fast or too slow. It's making irreversible changes without knowing which ones they are."
 author: "Chris Grobauskas"
 date: "2025-03-22"
+updated: "2026-02-28"
 tags:
   - Risk
 ---
+
 # Willing to Fail
 
 Being willing to fail is different from being reckless. But in software, the line is often drawn in the wrong place.

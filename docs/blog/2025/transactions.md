@@ -3,11 +3,13 @@ title: "Distributed Transactions"
 description: "Your transaction strategy defines your failure behavior. Understanding the tradeoffs between 2PC, sagas, and compensating transactions matters more than picking a favorite."
 author: "Chris Grobauskas"
 date: "2025-03-21"
+updated: "2026-02-28"
 tags:
   - Architecture
   - Design
   - Database
 ---
+
 # Distributed Transactions
 
 Transactions in a single database are well-understood. Transactions across databases, queues, and external services are not. The failure modes are different, the guarantees are weaker, and the abstractions your framework provides often hide what's actually happening.

@@ -8,6 +8,7 @@ tags:
   - AI
   - Standards
 ---
+
 # Human in the Loop
 
 What if an AI monitored whether you followed all rules and laws that applied to you ... and then acted on what it found?
@@ -16,7 +17,7 @@ Not flagged for review. Acted. Put you on a no-fly list. Accused you of fraud. N
 
 <!-- more -->
 
-That scenario is the subject of Jon Penney's guest post on Bruce Schneier's blog, [AI and Micro-directives](https://www.schneier.com/blog/archives/2023/07/ai-and-microdirectives.html). Penney focuses on the legal risks to the *targets* of AI-based decisions, but the legal exposure cuts both directions. 
+That scenario is the subject of Jon Penney's guest post on Bruce Schneier's blog, [AI and Micro-directives](https://www.schneier.com/blog/archives/2023/07/ai-and-microdirectives.html). Penney focuses on the legal risks to the _targets_ of AI-based decisions, but the legal exposure cuts both directions.
 
 > Businesses deploying GenAI systems need to consider whether their AI's outcomes are fair, explainable, and defensible in court.
 
