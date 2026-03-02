@@ -1,26 +1,30 @@
-# Summary
-With 25 years of experience in technology, I have worked across a range of platforms including Linux, Mainframe, and AWS. 
+---
+title: "Resume"
+description: "Chris Grobauskas"
+author: "Chris Grobauskas"
+date: "2026-02-22"
+tags:
+  - resume
+  - career
+---
 
-My background spans software development, database administration, and large-scale system modernization, with a focus on delivering practical solutions for complex enterprise challenges. 
-
-I enjoy collaborating with cross-functional teams, mentoring others, and sharing knowledge to help drive continuous improvement. 
-
-My approach is hands-on and approachable, aiming to make technology accessible while maintaining high standards for quality and reliability. 
-
-# Work Experience
+# Professional Profile
+> Technology engineer with 25 years of experience spanning software development, database administration, system architecture, production support, and cloud modernization across Mainframe, Linux, and AWS platforms. 
+>
+> Led initiatives from application design and team leadership to large-scale data migration. Recognized for aligning technical decisions with business outcomes, improving reliability in mission-critical systems, and mentoring engineers while partnering effectively across teams.
 
 ## State Farm
 ### Senior Technology Engineer
 #### Bloomington, Illinois, United States
-##### 2024 - 2025
-- Led data modernization initiatives for the largest Property and Casualty (P&C) claim system in the world, driving strategic improvements across core systems.
-- Collaborated with cross-functional technical teams to support and enhance production claim systems, ensuring high availability and performance.
-- Consulted with enterprise technology teams, advocating for solutions aligned with business objectives.
-- Influenced software engineering and data management best practices across multiple teams, fostering a culture of quality and efficiency.
-- Evaluated new products and drove proof-of-concepts, advocating for innovative solutions to enhance enterprise capabilities.
-- Resolved major production outages by coordinating rapid, multi-team troubleshooting efforts, minimizing downtime and business impact.
-- Communicated complex technical solutions and project progress to senior leadership, ensuring transparency and alignment.
-- Mentored junior engineers and cultivated a collaborative, innovative team culture.
+##### 2024 - Present
+- Served as a core team member on enterprise claim system modernization, advising across interdisciplinary work streams spanning application development, data architecture, infrastructure, and leadership.
+- Co-Led data modernization initiatives for the largest Property and Casualty (P&C) claim system in the world, determining data strategy for our migration while reducing risk and making sure updates to our core systems will align with business outcomes.
+- Partnered with cross-functional technical teams to advance production claim system resilience, driving improvements in high availability, performance, and operational readiness.
+- Advocated for software engineering and data management best practices across multiple teams, strengthening design consistency, delivery quality, and operational discipline.
+- Evaluated new products and drove proof-of-concepts, helping de-risk technical choices.
+- Resolved major production outages by coordinating rapid, multi-team troubleshooting efforts, minimizing downtime.
+- Communicated complex technical solutions, tradeoffs, and project progress to senior leadership, enabling transparency and informed decision-making.
+- Mentored junior engineers and cultivated a collaborative, innovative team culture while growing teamwork and delivery capability across teams.
 
 ## Prior Experience
 ### State Farm
@@ -29,8 +33,8 @@ My approach is hands-on and approachable, aiming to make technology accessible w
 ###### Core Team Member on Enterprise Systems Modernization Efforts
 - Automated Db2 to Postgres migration: Developed a Python program to convert the DDL for 24,000 Db2 tables to Postgres. Collaborated with enterprise data enablement teams to review vendor tools for schema migration.
 - Migrated billions of rows with zero downtime: Successfully replicated billions of rows of legacy data from z/OS Db2 to Aurora Postgres using Qlik Replicate, enabling early experimentation with Aurora Postgres.
-- Streamlined deployment with automation: Implemented Gitlab CI pipelines and Flyway to automate DDL deployment for Aurora Postgres, boosting efficiency and consistency.
-- Troubleshooting and support: Acted as the go-to data engineer for troubleshooting production issues, quickly resolving problems and minimizing downtime.
+- Streamlined deployment with automation: Implemented GitLab CI pipelines and Flyway to automate DDL deployment for Aurora Postgres, boosting efficiency and consistency.
+- Served as a key resource for diagnosing complex production issues spanning application, data, and infrastructure boundaries.
 - Leadership and mentorship: Provided technical leadership and mentorship to other engineers, fostering a collaborative learning environment.
 - Knowledge sharing: Presented at area, guild, and cloud summit meetings to share knowledge and best practices.
 
@@ -48,6 +52,7 @@ My approach is hands-on and approachable, aiming to make technology accessible w
 - Supported a J2EE application that managed the printing, bundling, and delivery of prints and faxes for the world's largest P&C claim system.
 - Developed a software solution to streamline the claims file delivery process for the legal department, improving efficiency and accuracy.
 - Worked on an enterprise print consolidation effort that enabled the use of enterprise printers by the ECS application to increase security and cost efficiency.
+
 ######  Enterprise Claim System (ECS) Program
   - Led efforts to bring over 200 data flows to rest before conversion by driving discussions across multiple application teams to create a system-wide plan.
   - Contributed to the ECS Data Conversion Project by writing data extract jobs, identifying data quality issues, and proactively cleaning up data quality issues before migration.
@@ -57,7 +62,7 @@ My approach is hands-on and approachable, aiming to make technology accessible w
 ##### 2000 - 2010
 ###### Team Lead for Claims Service Record (CSR)
 - Led and owned maintenance of critical CSR applications across transaction management, architecture, security, data movement, organizational data, and automation tools.
-- Streamlined system audits, security reviews, and performance troubleshooting as the single point of contact.
+- Streamlined system audits, security reviews, and performance troubleshooting as a central point of contact.
 - Championed architecture, design, and code reviews to ensure high quality and consistency across the CSR application suite.
 - Provided quality control and oversight as a State Farm contact and team lead for external associates in a support structure with only 10 State Farm internal employees for legacy CSR.
 
