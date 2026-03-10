@@ -71,7 +71,7 @@ If the answer to any of those is no, that's the work to do before you leave ... 
 - **Create one real backup per task.** Pair, then let the backup drive it end-to-end once.
 - **Protect learning time.** Cross-training without time to do it is a lie.
 - **Treat vacation as a drill.** If work waits for one person, you found a single point of failure.
-- **Write runbooks for the highest-risk tasks.** A checklist they can follow beats memory under pressure.
+- **Have your team write runbooks for the highest-risk tasks.** A checklist they can follow beats memory under pressure.
 - **Define the escalation path.** Make it clear when the bridge and management need to be pulled in.
 - **Share your management backup.** Before you leave, tell your team who to go to for approvals and decisions while you're out.
 
