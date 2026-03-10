@@ -1,0 +1,6 @@
+{{/* Mermaid diagram render hook. Wraps ```mermaid code blocks in a
+<div class="mermaid">
+  for client-side rendering. The Mermaid JS library is loaded in
+  extend_footer.html. */}}
+  <div class="mermaid">{{- .Inner | safeHTML -}}</div>
+</div>

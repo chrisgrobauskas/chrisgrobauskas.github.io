@@ -1,0 +1,119 @@
+baseURL = "https://www.grobauskas.com/"
+languageCode = "en-us"
+title = "One More Thing!"
+theme = "PaperMod"
+paginate = 10
+enableRobotsTXT = true
+buildDrafts = false
+
+# Hugo reads "updated" front matter key as lastmod
+[frontmatter]
+  lastmod = ["updated", "lastmod", ":git"]
+  date = ["date"]
+
+# Enable RSS + JSON (search) output on homepage
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Tags taxonomy
+[taxonomies]
+  tag = "tags"
+
+# Markdown rendering
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    lineNos = false
+    guessSyntax = true
+
+# RSS feed config
+[services]
+  [services.rss]
+    limit = 20
+
+# ── PaperMod Parameters ──────────────────────────────────────
+[params]
+  env = "production"
+  description = "Writing on systems and leadership — and when both have to change."
+  author = "Chris Grobauskas"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  ShowRssButtonInSectionTermList = true
+  ShowShareButtons = false
+  ShowWordCount = false
+  mainSections = ["blog"]
+  images = ["/images/grobauskas-profile-small.jpg"]
+
+  [params.label]
+    text = "One More Thing!"
+    icon = "/favicon.svg"
+    iconHeight = 28
+
+  [params.homeInfoParams]
+    Title = "One More Thing!"
+    Content = "Writing on systems and leadership — and when both have to change."
+
+  [params.profileMode]
+    enabled = false
+
+  # Search (Fuse.js)
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 3
+    keys = ["title", "permalink", "summary", "content"]
+
+  # Social icons in footer/header
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/chris-grobauskas/"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:chris.grobauskas@outlook.com"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+# ── Top Navigation Menu ──────────────────────────────────────
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "resume"
+  name = "Resume"
+  url = "/resume/"
+  weight = 4
+
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 5

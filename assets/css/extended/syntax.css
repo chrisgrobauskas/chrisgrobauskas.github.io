@@ -1,0 +1,125 @@
+/*
+ * syntax.css
+ * Code syntax highlighting tokens for Hugo/Chroma.
+ *
+ * Hugo uses Chroma classes when markup.highlight.noClasses = false.
+ */
+
+/* Base code text */
+.highlight pre code,
+.chroma {
+  color: #ffffff;
+}
+
+/* Background — use PaperMod's --hljs-bg variable */
+.highlight pre,
+.chroma {
+  background-color: var(--hljs-bg);
+}
+
+/* ── Comments ─────────────────────────────────────────────────── */
+.chroma .c,    /* Comment */
+.chroma .ch,   /* Comment.Hashbang */
+.chroma .cm,   /* Comment.Multiline */
+.chroma .c1,   /* Comment.Single */
+.chroma .cs,   /* Comment.Special */
+.chroma .cp,   /* Comment.Preproc */
+.chroma .cpf   /* Comment.PreprocFile */ {
+  color: #8a96a2;
+  font-style: italic;
+}
+
+/* ── Keywords / Operators ─────────────────────────────────────── */
+.chroma .k,    /* Keyword */
+.chroma .kc,   /* Keyword.Constant */
+.chroma .kd,   /* Keyword.Declaration */
+.chroma .kn,   /* Keyword.Namespace */
+.chroma .kp,   /* Keyword.Pseudo */
+.chroma .kr,   /* Keyword.Reserved */
+.chroma .kt,   /* Keyword.Type */
+.chroma .o,    /* Operator */
+.chroma .ow    /* Operator.Word */ {
+  color: #c792ea;
+}
+
+/* ── Strings ──────────────────────────────────────────────────── */
+.chroma .s,    /* Literal.String */
+.chroma .sa,   /* Literal.String.Affix */
+.chroma .sb,   /* Literal.String.Backtick */
+.chroma .sc,   /* Literal.String.Char */
+.chroma .dl,   /* Literal.String.Delimiter */
+.chroma .sd,   /* Literal.String.Doc */
+.chroma .s2,   /* Literal.String.Double */
+.chroma .se,   /* Literal.String.Escape */
+.chroma .sh,   /* Literal.String.Heredoc */
+.chroma .si,   /* Literal.String.Interpol */
+.chroma .sx,   /* Literal.String.Other */
+.chroma .sr,   /* Literal.String.Regex */
+.chroma .s1,   /* Literal.String.Single */
+.chroma .ss    /* Literal.String.Symbol */ {
+  color: #c3e88d;
+}
+
+/* ── Functions ────────────────────────────────────────────────── */
+.chroma .nf,   /* Name.Function */
+.chroma .fm,   /* Name.Function.Magic */
+.chroma .nb    /* Name.Builtin (print, len, etc.) */ {
+  color: #82aaff;
+}
+
+/* ── Numbers / Constants / Booleans ───────────────────────────── */
+.chroma .m,    /* Literal.Number */
+.chroma .mb,   /* Literal.Number.Bin */
+.chroma .mf,   /* Literal.Number.Float */
+.chroma .mh,   /* Literal.Number.Hex */
+.chroma .mi,   /* Literal.Number.Integer */
+.chroma .il,   /* Literal.Number.Integer.Long */
+.chroma .mo,   /* Literal.Number.Oct */
+.chroma .kc    /* true, false, null — Keyword.Constant */ {
+  color: #f78c6c;
+}
+
+/* ── Class names ──────────────────────────────────────────────── */
+.chroma .nc,   /* Name.Class */
+.chroma .ne,   /* Name.Exception */
+.chroma .ni    /* Name.Entity */ {
+  color: #ffcb6b;
+}
+
+/* ── Properties / Attributes ──────────────────────────────────── */
+.chroma .na,   /* Name.Attribute */
+.chroma .py    /* Name.Property */ {
+  color: #9cc4ff;
+}
+
+/* ── Tags / Selectors ─────────────────────────────────────────── */
+.chroma .nt,   /* Name.Tag */
+.chroma .nn    /* Name.Namespace */ {
+  color: #f07178;
+}
+
+/* ── Variables / Punctuation / Builtins ────────────────────────── */
+.chroma .n,    /* Name */
+.chroma .nv,   /* Name.Variable */
+.chroma .vc,   /* Name.Variable.Class */
+.chroma .vg,   /* Name.Variable.Global */
+.chroma .vi,   /* Name.Variable.Instance */
+.chroma .vm,   /* Name.Variable.Magic */
+.chroma .p     /* Punctuation */ {
+  color: #d6deeb;
+}
+
+/* ── Generic diff ─────────────────────────────────────────────── */
+.chroma .gd {
+  color: #f07178;
+} /* Deleted */
+.chroma .gi {
+  color: #c3e88d;
+} /* Inserted */
+
+/* ── Line numbers ─────────────────────────────────────────────── */
+.chroma .ln,
+.chroma .lnt {
+  color: #7f8c98;
+  user-select: none;
+}

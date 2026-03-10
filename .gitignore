@@ -1,0 +1,55 @@
+# Blog
+backups/*.tar.gz
+content/blog/drafts/
+
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+hugo_stats.json
+
+# Hugo build output
+.Ulysses*
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.venv/
+venv/
+env/
+ENV/
+.ipynb_checkpoints/
+
+# Node artifacts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm/
+.yarn/
+.parcel-cache/
+.next/
+.nuxt/
+.svelte-kit/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+TODO.md
+.DS_Store

@@ -1,0 +1,64 @@
+{{/* extend_footer.html — site footer + Mermaid initialization */}}
+
+<!-- Site footer -->
+<footer class="site-footer" role="contentinfo">
+  <p>
+    <em>Written with</em> ❤️ <em>by Chris Grobauskas</em>
+    &mdash; Writing on systems and leadership &mdash; and when both have to change.
+  </p>
+  <nav class="footer-links" aria-label="Footer links">
+    <a href="/about/">About</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://www.grobauskas.com" target="_blank" rel="noopener"
+      >www.grobauskas.com</a
+    >
+    &nbsp;&middot;&nbsp;
+    <a
+      href="https://www.linkedin.com/in/chris-grobauskas/"
+      target="_blank"
+      rel="noopener"
+      >LinkedIn</a
+    >
+  </nav>
+</footer>
+
+<!-- Mermaid diagrams -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>
+  (function () {
+    // Detect PaperMod dark mode
+    var isDark = document.body.classList.contains("dark");
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: isDark ? "dark" : "default",
+      securityLevel: "loose",
+    });
+
+    // Re-initialize when theme toggles
+    var observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (m) {
+        if (m.attributeName === "class") {
+          var nowDark = document.body.classList.contains("dark");
+          mermaid.initialize({
+            startOnLoad: false,
+            theme: nowDark ? "dark" : "default",
+            securityLevel: "loose",
+          });
+          // Re-render existing diagrams
+          document.querySelectorAll(".mermaid").forEach(function (el) {
+            var svg = el.querySelector("svg");
+            if (svg) {
+              el.removeAttribute("data-processed");
+              svg.remove();
+            }
+          });
+          mermaid.init(undefined, ".mermaid");
+        }
+      });
+    });
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+  })();
+</script>

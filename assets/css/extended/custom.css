@@ -1,0 +1,405 @@
+/*
+ * custom.css
+ * Grobauskas colour scheme mapped onto PaperMod variables.
+ * Supports auto (OS), light, and dark modes.
+ */
+
+/* ══════════════════════════════════════════════════════════════
+   LIGHT MODE
+   ══════════════════════════════════════════════════════════════ */
+:root {
+  /* PaperMod core variables */
+  --theme: #f8f5f1; /* warm neutral page bg               */
+  --entry: #ffffff; /* card / post-entry bg                */
+  --primary: #2f3640; /* body text                           */
+  --secondary: #5b6168; /* muted / meta text                   */
+  --tertiary: #d7c9bc; /* borders                             */
+  --content: #2f3640; /* content text                        */
+  --hljs-bg: #2b2b2b; /* fenced code block bg                */
+  --code-bg: #f3ebe3; /* inline code bg                      */
+  --border: #d7c9bc; /* borders                             */
+
+  /* Brand accent */
+  --accent: #c5091a; /* deep red (WCAG AA on #f8f5f1) */
+  --accent-dark: #701611; /* dark red — hover / active          */
+
+  /* Extended palette */
+  --heading: #5f231c; /* h1–h6 colour                   */
+  --blockquote-bg: #efe4db;
+  --blockquote-text: #2f3640;
+  --table-header-bg: #c5091a;
+  --table-header-text: #ffffff;
+  --table-stripe: #f1e9e1;
+  --hr-color: #2b2b2b;
+  --focus-ring: #701611;
+
+  /* Typography */
+  --font-sans:
+    "Inter", "Aptos", "Segoe UI Variable", "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, system-ui, -apple-system, sans-serif;
+  --font-mono:
+    "JetBrains Mono", "Cascadia Code", "SFMono-Regular", Menlo, Consolas,
+    "Liberation Mono", monospace;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   DARK MODE — PaperMod uses data-theme="dark" on <html>
+   ══════════════════════════════════════════════════════════════ */
+:root[data-theme="dark"] {
+  --theme: #1d1e20;
+  --entry: #24262a;
+  --primary: #e2e0dc;
+  --secondary: #b3ada6;
+  --tertiary: #5c4c3f;
+  --content: #e2e0dc;
+  --hljs-bg: #15171a;
+  --code-bg: #2a2623;
+  --border: #5c4c3f;
+
+  --accent: #d39a33; /* gold                              */
+  --accent-dark: #e3b15a; /* lighter gold — hover              */
+
+  --heading: #e0aa4e;
+  --blockquote-bg: #2a2521;
+  --blockquote-text: #efe3d4;
+  --table-header-bg: #342c27;
+  --table-header-text: #f0d4a2;
+  --table-stripe: #24262a;
+  --hr-color: #5c544d;
+  --focus-ring: #e3b15a;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   BASE STYLES
+   ══════════════════════════════════════════════════════════════ */
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  font-optical-sizing: auto;
+}
+
+/* ── Links ────────────────────────────────────────────────────── */
+a {
+  color: var(--accent);
+}
+a:hover {
+  color: var(--accent-dark);
+}
+
+/* Content body links get underline for accessibility */
+.post-content a,
+.page-content a {
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+  text-decoration-thickness: 0.08em;
+  color: var(--accent);
+}
+.post-content a:hover,
+.page-content a:hover {
+  color: var(--accent-dark);
+}
+
+/* Nav & header links stay clean */
+.nav a,
+header a,
+.footer a,
+.breadcrumbs a,
+.post-entry a {
+  text-decoration: none;
+}
+.nav a:hover,
+header a:hover,
+.footer a:hover,
+.breadcrumbs a:hover {
+  color: var(--accent);
+}
+
+/* ── Focus styles (WCAG AA) ──────────────────────────────────── */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* ── Headings ─────────────────────────────────────────────────── */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6,
+h1.post-title,
+.post-title,
+.first-entry .entry-header h1,
+.entry-header h2 {
+  font-family: var(--font-sans);
+  color: var(--heading) !important;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.012em;
+  text-wrap: balance;
+}
+
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  font-weight: 650;
+  line-height: 1.3;
+  letter-spacing: -0.006em;
+}
+
+/* ── Typography ───────────────────────────────────────────────── */
+.post-content {
+  line-height: 1.7;
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1;
+}
+
+.post-content p,
+.post-content li,
+.post-content blockquote {
+  max-width: 72ch;
+}
+
+.post-content em {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.post-content strong {
+  color: inherit;
+}
+
+/* ── Horizontal rules ─────────────────────────────────────────── */
+.post-content hr {
+  border: 0;
+  border-top: 2px solid var(--hr-color);
+}
+
+/* ── Code ─────────────────────────────────────────────────────── */
+code {
+  font-family: var(--font-mono);
+}
+
+.post-content code:not(pre code) {
+  font-size: 0.9em;
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+}
+
+.post-content pre {
+  max-width: min(100%, 72ch);
+  overflow-x: auto;
+}
+
+.post-content pre code {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  border: none;
+  padding: 0;
+}
+
+/* ── Blockquotes ──────────────────────────────────────────────── */
+.post-content blockquote {
+  border-left: 4px solid var(--accent);
+  background: var(--blockquote-bg);
+  color: var(--blockquote-text);
+  padding: 0.8em 1.2em;
+  margin-left: 0;
+}
+
+/* ── Tables ───────────────────────────────────────────────────── */
+.post-content table th {
+  background-color: var(--table-header-bg);
+  color: var(--table-header-text);
+  border-color: var(--border);
+}
+
+.post-content table tr:nth-child(even) {
+  background-color: var(--table-stripe);
+}
+
+.post-content table td,
+.post-content table th {
+  border-color: var(--border);
+  padding: 0.5em 0.75em;
+}
+
+/* ── List pages (home, blog index, tags) ─ match single-page bg ── */
+.list {
+  background: var(--theme);
+}
+
+/* ── Entry headings on list / home cards ──────────────────────── */
+.entry-header h2 {
+  color: var(--heading) !important;
+}
+
+/* ── Tags list page ───────────────────────────────────────────── */
+.terms-tags a {
+  color: var(--accent);
+}
+.terms-tags a:hover {
+  color: var(--accent-dark);
+}
+
+.page-header h1 {
+  color: var(--heading) !important;
+}
+
+/* ── Post entry cards ─────────────────────────────────────────── */
+.post-entry {
+  border-color: var(--border);
+}
+
+/* ── Tag chips ────────────────────────────────────────────────── */
+.post-tags a {
+  color: var(--accent);
+}
+.post-tags a:hover {
+  color: var(--accent-dark);
+}
+
+/* ── Pagination ───────────────────────────────────────────────── */
+.pagination a {
+  background: var(--accent);
+  color: #fff;
+}
+.pagination a:hover {
+  background: var(--accent-dark);
+  color: #fff;
+}
+
+/* ── Search ───────────────────────────────────────────────────── */
+#searchResults mark {
+  background-color: var(--accent);
+  color: #fff;
+  padding: 0.05em 0.15em;
+  border-radius: 2px;
+}
+
+/* ── TOC sidebar ──────────────────────────────────────────────── */
+.toc a {
+  color: var(--secondary);
+}
+.toc a:hover,
+.toc a.active {
+  color: var(--accent);
+}
+
+/* ── Footer ───────────────────────────────────────────────────── */
+.site-footer {
+  font-size: 0.9em;
+  color: var(--secondary);
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.site-footer a {
+  color: var(--accent);
+}
+.site-footer a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+.site-footer .footer-links {
+  margin-top: 0.5rem;
+}
+
+.site-footer .footer-links a {
+  margin: 0 0.5em;
+}
+
+/* ── Prev / Next post navigation ──────────────────────────────── */
+.paginav {
+  background: var(--entry);
+  border: 1px solid var(--border);
+}
+
+.paginav a {
+  color: var(--primary);
+  text-decoration: none;
+  padding: 10px 14px;
+}
+
+.paginav a:hover {
+  background: var(--code-bg);
+}
+
+.paginav .title {
+  color: var(--accent);
+}
+
+.paginav a:hover .title {
+  color: var(--accent-dark);
+}
+
+.paginav span:not(.title) {
+  color: var(--primary);
+}
+
+.paginav a:hover span:not(.title) {
+  color: var(--accent);
+}
+
+/* ── PaperMod theme toggle overrides ──────────────────────────── */
+#theme-toggle {
+  cursor: pointer;
+}
+
+#theme-toggle:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* ── Reduced motion ───────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Skip-to-content link (a11y) ──────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  z-index: 10000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* ── Print ────────────────────────────────────────────────────── */
+@media print {
+  .site-footer,
+  #theme-toggle,
+  .toc,
+  .post-nav-links,
+  .breadcrumbs {
+    display: none;
+  }
+}

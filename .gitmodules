@@ -1,0 +1,6 @@
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "alignment"]
+	path = alignment
+	url = https://github.com/chrisgrobauskas/writing-editor.git
