@@ -36,3 +36,7 @@ Three questions to decide whether the Colossus Bet applies:
 - **Is the uncertainty real?** If you can resolve it with a spike or a proof of concept, do that instead.
 - **What's the cost of being wrong?** If the losing path is cheap to abandon, just pick one.
 - **Can you afford the overlap?** Parallel options only work if you can staff and fund both without starving either.
+
+## Links
+
+- [GCHQ - Colossus at 80](https://www.gchq.gov.uk/news/colossus-80) - GCHQ retrospective on the decision to pursue both approaches

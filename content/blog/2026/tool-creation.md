@@ -78,3 +78,8 @@ It would have made more sense to enhance the tool everyone already understood to
 > GenAI makes creating tools easier, which makes this pattern worse. If everyone creates tools to solve common problems, you get the opposite of the [tragedy of the commons](https://en.wikipedia.org/wiki/Tragedy_of_the_commons): instead of depleting a shared resource, you end up with a fragmented mess of competing, siloed solutions.
 
 Code generation is a lever. Point it at the right problem and it multiplies your effort. Point it at the wrong one and it multiplies your confusion.
+
+## Links
+
+- [Template processor - Wikipedia](https://en.wikipedia.org/wiki/Template_processor) - the pattern behind configuration-as-code tools
+- [Tragedy of the commons - Wikipedia](https://en.wikipedia.org/wiki/Tragedy_of_the_commons) - the classic shared-resource problem, inverted when everyone builds their own tool
