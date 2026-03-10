@@ -31,8 +31,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive
           fetch-depth: 0
+          token: ${{ secrets.SUBMODULE_TOKEN }}
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
