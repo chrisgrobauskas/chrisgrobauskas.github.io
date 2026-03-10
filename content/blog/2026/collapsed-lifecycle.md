@@ -92,7 +92,7 @@ The collaborative loop that works well in coding ... try something, observe the 
 
 ## Context Requires Stewardship
 
-In [The GenAI Arc](/blog/2025/genai-arc/), I argued that what makes agentic AI's blast radius larger than earlier automation is that it reaches data, not just code. If you automate reasoning about a system, you also stop building mental models of it. The knowledge that comes from design reviews, reading code, and supporting systems in production doesn't transfer automatically. When a serious data issue eventually arrives, the human nominally in the loop may no longer have the context to fix it.
+In [The GenAI Arc](/blog/2025/genai-arc/), I argued that what makes agentic AI's blast radius larger than earlier automation is that it reaches data and systems, not just code. If you automate reasoning about a system, you also stop building mental models of it. The knowledge that comes from design reviews, reading code, and supporting systems in production doesn't transfer automatically. When a serious data issue eventually arrives, the human nominally in the loop may no longer have the context to fix it.
 
 Recovery requires someone who owns the data ... not just the schema, but the meaning. Someone who knows which values are valid, which relationships must hold, and what downstream systems assume about consistency.
 
